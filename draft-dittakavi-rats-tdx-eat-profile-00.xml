@@ -127,9 +127,9 @@
         <name>Attester claims</name>
        <dl newline="true">
           <dt>attester_advisory_ids:</dt>
-          <dd>Array of Advisory IDs referring to Intel security advisories that provide insight into the reason(s) for the value of tcbStatus of the platform TCB level being evaluated. See **advisoryIDs** in [Intel® Trusted Services API Management Developer Portal](https://api.portal.trustedservices.intel.com/documentation).</dd>
+          <dd>Array of Advisory IDs referring to Intel security advisories that provide insight into the reason(s) for the value of tcbStatus of the platform TCB level being evaluated. See **advisoryIDs** in <xref target="TDX-API-Management-Portal"/>.</dd>
           <dt>attester_tcb_status:</dt>
-          <dd>The string value represents the TCB level status of the platform being evaluated. See **tcbStatus** in [Intel® Trusted Services API Management Developer Portal](https://api.portal.trustedservices.intel.com/documentation).</dd>
+          <dd>The string value represents the TCB level status of the platform being evaluated. See **tcbStatus** in <xref target="TDX-API-Management-Portal"/>.</dd>
           /dl>
     </section>
     </section>
@@ -262,6 +262,15 @@ source code goes here [REPLACE]
       <references>
         <name>Informative References</name>
         <reference anchor="TDX" target="https://cdrdv2.intel.com/v1/dl/getContent/690419">
+          <front>
+            <title>Intel® Trust Domain Extensions</title>
+            <author>
+              <organization>Intel</organization>
+            </author>
+            <date month="Feb" year="2023"/>
+          </front>
+        </reference>
+        <reference anchor="TDX-API-Management-Portal" target="https://api.portal.trustedservices.intel.com/documentation">
           <front>
             <title>Intel® Trust Domain Extensions</title>
             <author>
