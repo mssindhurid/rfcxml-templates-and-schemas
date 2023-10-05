@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- 
-     draft-rfcxml-general-template-standard-00
-  
-     This template includes examples of the most commonly used features of RFCXML with comments 
-     explaining how to customise them. This template can be quickly turned into an I-D by editing 
-     the examples provided. Look for [REPLACE], [REPLACE/DELETE], [CHECK] and edit accordingly.
-     Note - 'DELETE' means delete the element or attribute, not just the contents.
-     
-     Documentation is at https://authors.ietf.org/en/templates-and-schemas
--->
+
 <?xml-model href="rfc7991bis.rnc"?>  <!-- Required for schema validation and schema-aware editing -->
 <!-- <?xml-stylesheet type="text/xsl" href="rfc2629.xslt" ?> -->
 <!-- This third-party XSLT can be enabled for direct transformations in XML processors, including most browsers -->
@@ -26,50 +17,50 @@
 <rfc
   xmlns:xi="http://www.w3.org/2001/XInclude"
   category="info"
-  docName="draft-rfcxml-general-template-standard-00"
+  docName="draft-dittakavi-rats-tdx-eat-profile-00"
   ipr="trust200902"
   obsoletes=""
   updates=""
-  submissionType="IETF"
+  submissionType="independent"
   xml:lang="en"
   version="3">
-<!-- [REPLACE] 
-       * docName with name of your draft
-     [CHECK] 
-       * category should be one of std, bcp, info, exp, historic
-       * ipr should be one of trust200902, noModificationTrust200902, noDerivativesTrust200902, pre5378Trust200902
-       * updates can be an RFC number as NNNN
-       * obsoletes can be an RFC number as NNNN 
--->
 
   <front>
-    <title abbrev="Abbreviated Title">Title [REPLACE]</title>
-    <!--  [REPLACE/DELETE] abbrev. The abbreviated title is required if the full title is longer than 39 characters -->
+    <title abbrev="TDX EAT profile">EAT profile for Intel® Trust Domain Extensions (TDX) attestation result</title>
+    <seriesInfo name="Internet-Draft" value="draft-dittakavi-rats-tdx-eat-profile-00"/>
 
-    <seriesInfo name="Internet-Draft" value="draft-rfcxml-general-template-standard-00 [REPLACE]"/>
-   
-    <author fullname="fullname [REPLACE]" initials="Initials [REPLACE]" role="editor" surname="Surname [REPLACE]">
-      <!-- [CHECK]
-             * initials should not include an initial for the surname
-             * role="editor" is optional -->
-    <!-- Can have more than one author -->
-      
-    <!-- all of the following elements are optional -->
-      <organization>Organization [REPLACE/DELETE]</organization>
+    <author fullname="Greg Kostal" initials="G." surname="Kostal">
+      <organization>Microsoft</organization>
       <address>
-        <postal>
-          <!-- Reorder these if your country does things differently -->
-          <street>Street [REPLACE/DELETE]</street>
-          <city>City [REPLACE/DELETE]</city>
-          <region>Region [REPLACE/DELETE]</region>
-          <code>Postal code [REPLACE/DELETE]</code>
-          <country>Country [REPLACE/DELETE]</country>
-          <!-- Uses two letter country code -->
-        </postal>        
-        <phone>Phone [REPLACE/DELETE]</phone>
-        <email>Email [REPLACE/DELETE]</email>  
-        <!-- Can have more than one <email> element -->
-        <uri>URI [REPLACE/DELETE]</uri>
+        <email>gkostal@microsoft.com</email>  
+      </address>
+    </author>
+
+    <author fullname="Raghuram Yeluri" initials="R." surname="Yeluri">
+      <organization>Intel</organization>
+      <address>
+        <email>raghuram.yeluri@intel.com</email>  
+      </address>
+    </author>
+
+    <author fullname="Sindhuri Dittakavi" initials="S." surname="Dittakavi">
+      <organization>Microsoft</organization>
+      <address>
+        <email>sindhuri.dittakavi@microsoft.com</email>  
+      </address>
+    </author>
+
+    <author fullname="Haidong Xia" initials="H." surname="Xia">
+      <organization>Intel</organization>
+      <address>
+        <email>haidong.xia@intel.com</email>  
+      </address>
+    </author>
+
+     <author fullname="Jerry Yu" initials="J." surname="Yu">
+      <organization>Intel</organization>
+      <address>
+        <email>jerry.yu@intel.com</email>  
       </address>
     </author>
    
