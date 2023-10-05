@@ -69,7 +69,7 @@
     <keyword>Internet-Draft</keyword>
 
     <abstract>
-      <t>This Entity Attestation Token (EAT) profile describes claims for an Intel® Trust Domain Extensions (TDX) attestation result. These claims enable a relying party to establish trust with the environment. </t>
+      <t>Intel® Trust Domain Extensions (Intel® TDX) introduces architectural elements designed for the deployment of hardware-isolated virtual machines (VMs) known as trust domains (TDs). Intel TDX is designed to provide a more secure and isolated environment for running sensitive workloads or applications. The Entity Attestation Token (EAT) profile outlines claims for an Intel TDX attestation result. These claims enable a relying party to establish trust with the environment. </t>
     </abstract>
  
   </front>
@@ -78,7 +78,7 @@
     
     <section>
       <name>Introduction</name>
-      <t>Introductory text [REPLACE]</t>
+      <t>The profile outlines the claims for an Intel® Trust Domain Extensions (TDX) attestation result, generated as an Entity Attestation Token (EAT)]in a signed JSON Web Token (JWT) format using JOSE header. It doesn't contain nested tokens or a detached EAT bundle. The profile allows signing of the JWT token using RSA cryptographic algorithm. To facilitate verification of the signed JWT tokens, the verifier can expose the trusted token signing certificates using an OpenID metadata endpoint. In accordance with the standards outlined in the JSON Web Signature (JWS) specification, the receiver of the profile can use the certificate with key ID (**kid**) matching the **kid** parameter in the attestation token header for performing signature verification.</t>
       
       <section>
         <name>Requirements Language</name>
