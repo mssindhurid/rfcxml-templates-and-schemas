@@ -78,7 +78,7 @@
     
     <section>
       <name>Introduction</name>
-      <t>The profile outlines the claims for an Intel® Trust Domain Extensions (TDX) attestation result, generated as an Entity Attestation Token (EAT)]in a signed JSON Web Token (JWT) format using JOSE header. It doesn't contain nested tokens or a detached EAT bundle. The profile allows signing of the JWT token using RSA cryptographic algorithm. To facilitate verification of the signed JWT tokens, the verifier can expose the trusted token signing certificates using an OpenID metadata endpoint. In accordance with the standards outlined in the JSON Web Signature (JWS) specification, the receiver of the profile can use the certificate with key ID (**kid**) matching the **kid** parameter in the attestation token header for performing signature verification.</t>
+      <t>The profile outlines the claims for an Intel® Trust Domain Extensions <xref target="TDX"/> attestation result, generated as an Entity Attestation Token <xref target="EAT"/> in a signed JSON Web Token <xref target="JWT"/> format using JOSE header. It doesn't contain nested tokens or a detached EAT bundle. The profile allows signing of the JWT token using RSA cryptographic algorithm. To facilitate verification of the signed JWT tokens, the verifier can expose the trusted token signing certificates using an OpenID metadata endpoint. In accordance with the standards outlined in the JSON Web Signature <xref target="JWS"/> specification, the receiver of the profile can use the certificate with key ID (**kid**) matching the **kid** parameter in the attestation token header for performing signature verification.</t>
       
       <section>
         <name>Requirements Language</name>
