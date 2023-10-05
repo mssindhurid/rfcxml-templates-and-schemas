@@ -74,13 +74,12 @@
  
   </front>
 
-  <middle>
-    
+  <middle>   
     <section>
       <name>Introduction</name>
       <t>The profile outlines the claims for an Intel® Trust Domain Extensions <xref target="TDX"/> attestation result, generated as an Entity Attestation Token <xref target="EAT"/> in a signed JSON Web Token <xref target="JWT"/> format using JOSE header. It doesn't contain nested tokens or a detached EAT bundle. The profile allows signing of the JWT token using RSA cryptographic algorithm. To facilitate verification of the signed JWT tokens, the verifier can expose the trusted token signing certificates using an OpenID metadata endpoint. In accordance with the standards outlined in the JSON Web Signature <xref target="JWS"/> specification, the receiver of the profile can use the certificate with key ID (**kid**) matching the **kid** parameter in the attestation token header for performing signature verification.</t>
-      
-      <section>
+    </section>
+    <section>
         <name>Requirements Language</name>
         <t>The key words "MUST", "MUST NOT", "REQUIRED", "SHALL",
           "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT
@@ -88,10 +87,52 @@
           interpreted as described in BCP 14 <xref target="RFC2119"/>
           <xref target="RFC8174"/> when, and only when, they appear in
           all capitals, as shown here.</t>
-      </section>
-
     </section>
-    
+     <section>
+        <name>TDX profile claims</name>
+    <section>
+        <name>JWT claims</name>
+        <t>The complete definitions of the following claims are available in the IETF [JWT] specification. </t>
+         <dl newline="true">
+          <dt>iat:</dt>
+          <dd>The "iat" (issued at) claim identifies the time at which the JWT was issued.</dd>
+          <dt>exp:</dt>
+          <dd>The "exp" (expiration time) claim identifies the expiration time on or after which the JWT MUST NOT be accepted for processing. </dd>
+          <dt>iss:</dt>
+          <dd>The "iss" (issuer) claim identifies the principal that issued the JWT.</dd>
+          <dt>jti:</dt>
+          <dd>The "jti" (JWT ID) claim provides a unique identifier for the JWT.</dd>
+          <dt>nbf:</dt>
+          <dd>The "nbf" (not before) claim identifies the time before which the JWT MUST NOT be accepted for processing. </dd>
+         </dl>
+     </section>
+    <section>
+        <name>EAT claims</name>   
+       <t>The complete definitions of the following claims are available in the [EAT] specification.</t>
+         <dl newline="true">
+          <dt>eat_profile:</dt>
+          <dd>The "eat_profile" claim identifies an EAT profile by either a URL or an OID.</dd>
+          <dt>dbgstat:</dt>
+          <dd>The "dbgstat" claim applies to entity-wide or submodule-wide debug facilities of the entity like [JTAG] and diagnostic hardware built into chips.</dd>
+          <dt>intuse:</dt>
+          <dd>The "intuse" claim provides an indication to an EAT consumer about the intended usage of the token. </dd>
+          <dt>eat_nonce:</dt>
+          <dd>An EAT nonce is either a byte or text string or an array of byte or text strings.  The array option supports multistage EAT verification and consumption.</dd>
+         </dl>
+    </section>
+    <section>
+        <name>TDX claims</name>
+     </section>
+    <section>
+        <name>Attester claims</name>
+       <dl newline="true">
+          <dt>attester_advisory_ids:</dt>
+          <dd>Array of Advisory IDs referring to Intel security advisories that provide insight into the reason(s) for the value of tcbStatus of the platform TCB level being evaluated. See **advisoryIDs** in [Intel® Trusted Services API Management Developer Portal](https://api.portal.trustedservices.intel.com/documentation).</dd>
+          <dt>attester_tcb_status:</dt>
+          <dd>The string value represents the TCB level status of the platform being evaluated. See **tcbStatus** in [Intel® Trusted Services API Management Developer Portal](https://api.portal.trustedservices.intel.com/documentation).</dd>
+          /dl>
+    </section>
+    </section>
     <section>
       <name>Body [REPLACE]</name>
       <t>Body text [REPLACE]</t>
