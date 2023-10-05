@@ -168,9 +168,54 @@ source code goes here [REPLACE]
       <name>References</name>
       <references>
         <name>Normative References</name>
-        <xi:include anchor="EAT" href="https://datatracker.ietf.org/doc/html/draft-ietf-rats-eat-21"/>
-        <xi:include anchor="JWT" href="https://datatracker.ietf.org/doc/html/rfc7519"/>
-        <xi:include anchor="JWS" href="https://datatracker.ietf.org/doc/html/rfc7515"/>
+        <reference anchor="EAT" target="https://datatracker.ietf.org/doc/html/draft-ietf-rats-eat-21">
+          <front>
+            <title>The Entity Attestation Token (EAT)</title>
+            <author fullname="Laurence Lundblade" initials="L." surname="Lundblade">
+              <organization>Security Theory LLC</organization>
+            </author>
+            <author fullname="Giridhar Mandyam" initials="G." surname="Mandyam">
+              <organization>Qualcomm Technologies Inc.</organization>
+            </author>
+            <author fullname="Jeremy O'Donoghue" initials="J." surname="O'Donoghue">
+              <organization>Qualcomm Technologies Inc.</organization>
+            </author>
+            <author fullname="Carl Wallace" initials="C." surname="Wallace">
+              <organization>Red Hound Software, Inc.</organization>
+            </author>
+            <date day="30" month="June" year="2023"/>
+            </front>
+        </reference>
+         <reference anchor="JWT" target="https://datatracker.ietf.org/doc/html/rfc7519">
+          <front>
+            <title> JSON Web Token (JWT)</title>
+            <author fullname="Michael B. Jones" initials="M." surname="Jones">
+              <organization>Security Theory LLC</organization>
+            </author>
+            <author fullname="John Bradley" initials="J." surname="Bradley">
+              <organization>Qualcomm Technologies Inc.</organization>
+            </author>
+            <author fullname="Nat Sakimura" initials="N." surname="Sakimura">
+              <organization>Qualcomm Technologies Inc.</organization>
+            </author>
+            <date month="May" year="2015"/>
+            </front>
+        </reference>
+         <reference anchor="JWS" target="https://datatracker.ietf.org/doc/html/rfc7515">
+          <front>
+            <title>JSON Web Signature (JWS)</title>
+           <author fullname="Michael B. Jones" initials="M." surname="Jones">
+              <organization>Security Theory LLC</organization>
+            </author>
+            <author fullname="John Bradley" initials="J." surname="Bradley">
+              <organization>Qualcomm Technologies Inc.</organization>
+            </author>
+            <author fullname="Nat Sakimura" initials="N." surname="Sakimura">
+              <organization>Qualcomm Technologies Inc.</organization>
+            </author>
+            <date month="May" year="2015"/>
+            </front>
+        </reference>
       </references>
    
       <references>
@@ -189,24 +234,12 @@ source code goes here [REPLACE]
             <title>Title [REPLACE]</title>
             <author initials="Initials [REPLACE]" surname="Surname [REPLACE]">
               <organization/>
+               <!-- <organization>Organization [REPLACE]</organization> -->
             </author>
             <date year="2006"/>
             <!-- [CHECK] -->
           </front>
         </reference>
-
-        <reference anchor="exampleRefOrg" target="http://www.example.com/">
-        <!-- [REPLACE/DELETE] Example reference written by an organization not a person -->
-          <front>
-            <title>Title [REPLACE]</title>
-            <author>
-              <organization>Organization [REPLACE]</organization>
-            </author>
-            <date year="1984"/>
-            <!-- [CHECK] -->
-          </front>
-        </reference>       
-       
       </references>
     </references>
     
