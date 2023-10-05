@@ -261,13 +261,13 @@ source code goes here [REPLACE]
    
       <references>
         <name>Informative References</name>
-        <reference anchor="TDX" target="https://www.intel.com/content/www/us/en/developer/tools/trust-domain-extensions/overview.html">
+        <reference anchor="TDX" target="https://cdrdv2.intel.com/v1/dl/getContent/690419">
           <front>
-            <title>Intel® Trust Domain Extensions (Intel® TDX)</title>
+            <title>Intel® Trust Domain Extensions</title>
             <author>
               <organization>Intel</organization>
             </author>
-            <date year="2023"/>
+            <date month="Feb" year="2023"/>
           </front>
         </reference>
         <reference anchor="asdad">
