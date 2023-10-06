@@ -237,6 +237,15 @@
       </references>
       <references>
         <name>Informative References</name>
+        <reference anchor="JTAG" target="https://ieeexplore.ieee.org/document/5412866">
+        <front>
+          <title>IEEE Standard for Reduced-Pin and Enhanced-Functionality Test Access Port and Boundary-Scan Architecture</title>
+          <author >
+            <organization></organization>
+          </author>
+          <date year="2010" month="February"/>
+        </front>
+      </reference>
         <reference anchor="TDX" target="https://cdrdv2.intel.com/v1/dl/getContent/690419">
           <front>
             <title>Intel® Trust Domain Extensions</title>
