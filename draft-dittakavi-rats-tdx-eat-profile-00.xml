@@ -111,7 +111,7 @@
     </section>
     <section>
         <name>TDX claims</name>
-       <t>The complete definitions of the claims are available in the section **A.3.2 TD Quote Body** of Intel® TDX DCAP Quoting Library API <xref target="TDX-DCAP-Quoting-Library"/>.</t>
+       <t>The complete definitions of the claims are available in the section A.3.2 TD Quote Body of Intel® TDX DCAP Quoting Library API <xref target="TDX-DCAP-Quoting-Library"/>.</t>
           <dl newline="true">
           <dt>tdx_mrsignerseam:</dt>
           <dd>The hexadecimal string represents a byte array of length 48, which contains the measurement of the TDX module signer, provided it is valid.</dd>
@@ -142,9 +142,9 @@
           <dt>tdx_xfam</dt>
           <dd>The hexadecimal string represents a byte array of length 8, which contains a mask of CPU extended features that the TDX is allowed to use.</dd>
           <dt>tdx_seamsvn</dt>
-          <dd>The number represents the Intel TDX module SVN. The complete definition of the claim is available in section **3.1 SEAM_SIGSTRUCT: INTEL® TDX MODULE SIGNATURE STRUCTURE** of Intel® TDX Loader Interface Specification <xref target="TDX-Loader-Interface-Specification"/></dd>
+          <dd>The number represents the Intel TDX module SVN. The complete definition of the claim is available in section 3.1 SEAM_SIGSTRUCT: INTEL® TDX MODULE SIGNATURE STRUCTURE of Intel® TDX Loader Interface Specification <xref target="TDX-Loader-Interface-Specification"/></dd>
           <dt>tdx_td_attributes</dt>
-          <dd>The hexadecimal string corresponds to a byte array of length 8. These are the attributes associated with the Trust Domain (TD).  The complete definitions of the claims mentioned below are available in **A.3.4. TD Attributes** of <xref target="TDX-DCAP-Quoting-Library"/></dd>
+          <dd>The hexadecimal string corresponds to a byte array of length 8. These are the attributes associated with the Trust Domain (TD).  The complete definitions of the claims mentioned below are available in A.3.4. TD Attributes of <xref target="TDX-DCAP-Quoting-Library"/></dd>
           <dt>tdx_td_attributes_debug</dt>
           <dd>The boolean value indicates whether the TD runs in TD debug mode (set to 1) or not (set to 0). In TD debug mode, the CPU state and private memory are accessible by the host VMM.</dd>
           <dt>tdx_td_attributes_key_locker</dt>
@@ -161,7 +161,7 @@
         <name>Attester claims</name>
        <dl newline="true">
           <dt>attester_advisory_ids:</dt>
-          <dd>Array of Advisory IDs referring to Intel security advisories that provide insight into the reason(s) for the value of tcbStatus of the platform TCB level being evaluated. See **advisoryIDs** in Intel® Trusted Services API Management Developer Portal <xref target="TDX-API-Management-Portal"/>.</dd>
+          <dd>Array of Advisory IDs referring to Intel security advisories that provide insight into the reason(s) for the value of tcbStatus of the platform TCB level being evaluated. See advisoryIDs in Intel® Trusted Services API Management Developer Portal <xref target="TDX-API-Management-Portal"/>.</dd>
           <dt>attester_tcb_status:</dt>
           <dd>The string value represents the TCB level status of the platform being evaluated. See **tcbStatus** in <xref target="TDX-API-Management-Portal"/>.</dd>
        </dl>
