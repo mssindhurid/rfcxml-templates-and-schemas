@@ -69,7 +69,7 @@
     <keyword>Internet-Draft</keyword>
 
     <abstract>
-      <t>Intel® Trust Domain Extensions (Intel® TDX) introduces architectural elements designed for the deployment of hardware-isolated virtual machines (VMs) known as trust domains (TDs). Intel TDX is designed to provide a more secure and isolated environment for running sensitive workloads or applications. The Entity Attestation Token (EAT) profile outlines claims for an Intel TDX attestation result. These claims enable a relying party to establish trust with the environment. </t>
+      <t>Intel® Trust Domain Extensions (Intel® TDX) introduces architectural elements designed for the deployment of hardware-isolated virtual machines (VMs) known as trust domains (TDs). TDX is designed to provide a more secure and isolated environment for running sensitive workloads or applications. The Entity Attestation Token (EAT) profile outlines claims for an Intel TDX attestation result. These claims enable a relying party to establish trust with the environment. </t>
     </abstract>
  
   </front>
@@ -139,7 +139,7 @@
           <dt>tdx_rtmr3</dt>
           <dd>The hexadecimal string represents a byte array of length 48, which contains the runtime extendable measurement register.</dd>
           <dt>tdx_mrconfigid</dt>
-          <dd>The hexadecimal string represents a byte array of length 48, which contains the software-defined ID for non-owner-defined configuration of the TDX, e.g., runtime or OS configuration. </dd>
+          <dd>The hexadecimal string represents a byte array of length 48, which contains the software-defined ID for non-owner-defined configuration of the TDX, e.g., runtime or Operating System (OS) configuration. </dd>
           <dt>tdx_mrowner</dt>
           <dd>The hexadecimal string represents a byte array of length 48, which contains the software-defined ID for the TDX’s owner.</dd>
           <dt>tdx_mrownerconfig</dt>
@@ -149,13 +149,13 @@
           <dt>tdx_seam_attributes</dt>
           <dd>The hexadecimal string represents a byte array of length 8, which contains additional configuration of the TDX module.</dd>
           <dt>tdx_tee_tcb_svn</dt>
-          <dd>The hexadecimal string represents a byte array of length 16, which describes the TCB SVNs of TDX.</dd>
+          <dd>The hexadecimal string represents a byte array of length 16, which describes the Trusted Computing Base (TCB) Security Version Numbers (SVNs) of TDX.</dd>
           <dt>tdx_xfam</dt>
           <dd>The hexadecimal string represents a byte array of length 8, which contains a mask of CPU extended features that the TDX is allowed to use.</dd>
           <dt>tdx_seamsvn</dt>
           <dd>The number represents the Intel TDX module SVN. The complete definition of the claim is available in section **3.1 SEAM_SIGSTRUCT: INTEL® TDX MODULE SIGNATURE STRUCTURE** of Intel® TDX Loader Interface Specification <xref target="TDX-Loader-Interface-Specification"/></dd>
           <dt>tdx_td_attributes</dt>
-          <dd>The hexadecimal string corresponds to a byte array of length 8. These are the attributes associated with the Trusted Domain (TD).  The complete definitions of the claims mentioned below are available in **A.3.4. TD Attributes**  of <xref target="TDX-DCAP-Quoting-Library"/></dd>
+          <dd>The hexadecimal string corresponds to a byte array of length 8. These are the attributes associated with the Trust Domain (TD).  The complete definitions of the claims mentioned below are available in **A.3.4. TD Attributes** of <xref target="TDX-DCAP-Quoting-Library"/></dd>
           <dt>tdx_td_attributes_debug</dt>
           <dd>The boolean value indicates whether the TD runs in TD debug mode (set to 1) or not (set to 0). In TD debug mode, the CPU state and private memory are accessible by the host VMM.</dd>
           <dt>tdx_td_attributes_key_locker</dt>
@@ -174,7 +174,7 @@
           <dt>attester_advisory_ids:</dt>
           <dd>Array of Advisory IDs referring to Intel security advisories that provide insight into the reason(s) for the value of tcbStatus of the platform TCB level being evaluated. See **advisoryIDs** in Intel® Trusted Services API Management Developer Portal <xref target="TDX-API-Management-Portal"/>.</dd>
           <dt>attester_tcb_status:</dt>
-          <dd>The string value represents the TCB level status of the platform being evaluated. See **tcbStatus** in Intel® Trusted Services API Management Developer Portal <xref target="TDX-API-Management-Portal"/>.</dd>
+          <dd>The string value represents the TCB level status of the platform being evaluated. See **tcbStatus** in <xref target="TDX-API-Management-Portal"/>.</dd>
        </dl>
     </section>
     </section>
