@@ -102,7 +102,7 @@
           <dt>eat_profile:</dt>
           <dd>The "eat_profile" claim identifies an EAT profile by either a URL or an OID.</dd>
           <dt>dbgstat:</dt>
-          <dd>The "dbgstat" claim applies to entity-wide or submodule-wide debug facilities of the entity like [JTAG] and diagnostic hardware built into chips.</dd>
+          <dd>The "dbgstat" claim applies to entity-wide or submodule-wide debug facilities of the entity like <xref target="JTAG"/> and diagnostic hardware built into chips.</dd>
           <dt>intuse:</dt>
           <dd>The "intuse" claim provides an indication to an EAT consumer about the intended usage of the token. </dd>
           <dt>eat_nonce:</dt>
