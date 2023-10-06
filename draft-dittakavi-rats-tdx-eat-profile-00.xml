@@ -170,12 +170,12 @@
     <section anchor="IANA">
     <!-- All drafts are required to have an IANA considerations section. See RFC 8126 for a guide.-->
       <name>IANA Considerations</name>
-      <t>This memo includes no request to IANA. [CHECK]</t>
+      <t>This memo includes no request to IANA.</t>
     </section>
     <section anchor="Security">
       <!-- All drafts are required to have a security considerations section. See RFC 3552 for a guide. -->
       <name>Security Considerations</name>
-      <t>This document should not affect the security of the Internet. [CHECK]</t>
+      <t>This document should not affect the security of the Internet.</t>
     </section>
     <!-- NOTE: The Acknowledgements and Contributors sections are at the end of this template -->
   </middle>
@@ -276,8 +276,8 @@
       </references>
     </references>
     <section>
-      <name>Appendix 1 [REPLACE/DELETE]</name>
-      <t>This becomes an Appendix [REPLACE]</t>
+      <name>Appendix</name>
+      <t>This becomes an Appendix</t>
     </section>
     <section anchor="Acknowledgements" numbered="false">
       <name>Acknowledgements</name>
