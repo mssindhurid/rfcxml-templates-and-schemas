@@ -12,7 +12,6 @@
 ]>
 <!-- If further character entities are required then they should be added to the DOCTYPE above.
      Use of an external entity file is not recommended. -->
-
 <rfc
   xmlns:xi="http://www.w3.org/2001/XInclude"
   category="info"
@@ -23,57 +22,47 @@
   submissionType="independent"
   xml:lang="en"
   version="3">
-
   <front>
     <title abbrev="TDX EAT profile">EAT profile for Intel® Trust Domain Extensions (TDX) attestation result</title>
     <seriesInfo name="Internet-Draft" value="draft-dittakavi-rats-tdx-eat-profile-00"/>
-
     <author fullname="Greg Kostal" initials="G." surname="Kostal">
       <organization>Microsoft</organization>
       <address>
         <email>gkostal@microsoft.com</email>  
       </address>
     </author>
-
     <author fullname="Raghuram Yeluri" initials="R." surname="Yeluri">
       <organization>Intel</organization>
       <address>
         <email>raghuram.yeluri@intel.com</email>  
       </address>
     </author>
-
     <author fullname="Sindhuri Dittakavi" initials="S." surname="Dittakavi">
       <organization>Microsoft</organization>
       <address>
         <email>sindhuri.dittakavi@microsoft.com</email>  
       </address>
     </author>
-
     <author fullname="Haidong Xia" initials="H." surname="Xia">
       <organization>Intel</organization>
       <address>
         <email>haidong.xia@intel.com</email>  
       </address>
     </author>
-
      <author fullname="Jerry Yu" initials="J." surname="Yu">
       <organization>Intel</organization>
       <address>
         <email>jerry.yu@intel.com</email>  
       </address>
     </author>
-   
     <date year="2023"/>
     <area>Security</area>
     <workgroup>Remote ATtestation ProcedureS</workgroup>
     <keyword>Internet-Draft</keyword>
-
     <abstract>
       <t>Intel® Trust Domain Extensions (Intel® TDX) introduces architectural elements designed for the deployment of hardware-isolated virtual machines (VMs) known as trust domains (TDs). TDX is designed to provide a more secure and isolated environment for running sensitive workloads or applications. The Entity Attestation Token (EAT) profile outlines claims for an Intel TDX attestation result. These claims enable a relying party to establish trust with the environment. </t>
     </abstract>
- 
   </front>
-
   <middle>   
     <section>
       <name>Introduction</name>
@@ -181,15 +170,12 @@
     <section>
       <name>Body [REPLACE]</name>
       <t>Body text [REPLACE]</t>
-      
       <ol>
         <li>Ordered list item [REPLACE/DELETE]</li>
       </ol>
-      
       <ul>
         <li>Bulleted list item [REPLACE/DELETE]</li>
       </ul>
-      
       <dl newline="true">
         <!-- Omit newline="true" if you want each definition to start on the same line as the corresponding term -->
         <dt>First term: [REPLACE/DELETE]</dt>
@@ -197,7 +183,6 @@
         <dt>Second term: [REPLACE/DELETE]</dt>
         <dd>Definition of the second term [REPLACE/DELETE]</dd>
       </dl>
-      
       <table>
         <thead>
         <!-- [REPLACE/DELETE] a table header is optional -->
@@ -207,7 +192,6 @@
           <tr><td>Cell [REPLACE]</td></tr>
         </tbody>
       </table>
-
       <figure>
         <name>Source [REPLACE]</name>
         <sourcecode name="suggested filename [REPLACE/DELETE]" type="language [REPLACE/DELETE]" markers="true">
@@ -217,7 +201,6 @@ source code goes here [REPLACE]
         </sourcecode>
         <!-- [CHECK] markers="true" means that the rendered file will have <CODE BEGINS> and <CODE ENDS> added -->
       </figure>
-
       <figure>
         <name>Diagram [REPLACE]</name>
         <artset>
@@ -233,22 +216,18 @@ source code goes here [REPLACE]
         </artset>
       </figure>
     </section>   
-    
     <section anchor="IANA">
     <!-- All drafts are required to have an IANA considerations section. See RFC 8126 for a guide.-->
       <name>IANA Considerations</name>
       <t>This memo includes no request to IANA. [CHECK]</t>
     </section>
-    
     <section anchor="Security">
       <!-- All drafts are required to have a security considerations section. See RFC 3552 for a guide. -->
       <name>Security Considerations</name>
       <t>This document should not affect the security of the Internet. [CHECK]</t>
     </section>
-    
     <!-- NOTE: The Acknowledgements and Contributors sections are at the end of this template -->
   </middle>
-
   <back>
     <references>
       <name>References</name>
@@ -317,7 +296,6 @@ source code goes here [REPLACE]
           </front>
         </reference>
       </references>
-   
       <references>
         <name>Informative References</name>
         <reference anchor="TDX" target="https://cdrdv2.intel.com/v1/dl/getContent/690419">
@@ -358,16 +336,13 @@ source code goes here [REPLACE]
         </reference>
       </references>
     </references>
-    
     <section>
       <name>Appendix 1 [REPLACE/DELETE]</name>
       <t>This becomes an Appendix [REPLACE]</t>
     </section>
-
     <section anchor="Acknowledgements" numbered="false">
       <name>Acknowledgements</name>
       <t>Thanks to Dave Thaler for reviewing the content and offering guidance in publishing the profile.</t>
     </section>
-    
  </back>
 </rfc>
