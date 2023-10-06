@@ -122,15 +122,60 @@
     </section>
     <section>
         <name>TDX claims</name>
+       <t>The complete definitions of the claims are available in the section **A.3.2 TD Quote Body** of Intel® TDX DCAP Quoting Library API <xref target="TDX-DCAP-Quoting-Library"/>.</t>
+          <dl newline="true">
+          <dt>tdx_mrsignerseam:</dt>
+          <dd>The hexadecimal string represents a byte array of length 48, which contains the measurement of the TDX module signer, provided it is valid.</dd>
+          <dt>tdx_mrseam</dt>
+          <dd>The hexadecimal string represents a byte array of length 48, which contains the measurement of the Intel TDX module.</dd>
+          <dt>tdx_mrtd</dt>
+          <dd>The hexadecimal string represents a byte array of length 48, which contains the measurement of the initial contents of the TDX.</dd>
+          <dt>tdx_rtmr0</dt>
+          <dd>The hexadecimal string represents a byte array of length 48, which contains the runtime extendable measurement register.</dd>
+          <dt>tdx_rtmr1</dt>
+          <dd>The hexadecimal string represents a byte array of length 48, which contains the runtime extendable measurement register.</dd>
+          <dt>tdx_rtmr2</dt>
+          <dd>The hexadecimal string represents a byte array of length 48, which contains the runtime extendable measurement register.</dd>
+          <dt>tdx_rtmr3</dt>
+          <dd>The hexadecimal string represents a byte array of length 48, which contains the runtime extendable measurement register.</dd>
+          <dt>tdx_mrconfigid</dt>
+          <dd>The hexadecimal string represents a byte array of length 48, which contains the software-defined ID for non-owner-defined configuration of the TDX, e.g., runtime or OS configuration. </dd>
+          <dt>tdx_mrowner</dt>
+          <dd>The hexadecimal string represents a byte array of length 48, which contains the software-defined ID for the TDX’s owner.</dd>
+          <dt>tdx_mrownerconfig</dt>
+          <dd>The hexadecimal string represents a byte array of length 48, which contains the software-defined ID for owner-defined configuration of the TDX, e.g., specific to the workload rather than the runtime or OS.</dd>
+          <dt>tdx_report_data</dt>
+          <dd>The hexadecimal string corresponds to a byte array of length 64. In this context, the TDX has the flexibility to include 64 bytes of custom data in a TDX Report. For instance, this space can be used to hold a nonce, a public key, or a hash of a larger block of data.</dd>
+          <dt>tdx_seam_attributes</dt>
+          <dd>The hexadecimal string represents a byte array of length 8, which contains additional configuration of the TDX module.</dd>
+          <dt>tdx_tee_tcb_svn</dt>
+          <dd>The hexadecimal string represents a byte array of length 16, which describes the TCB SVNs of TDX.</dd>
+          <dt>tdx_xfam</dt>
+          <dd>The hexadecimal string represents a byte array of length 8, which contains a mask of CPU extended features that the TDX is allowed to use.</dd>
+          <dt>tdx_seamsvn</dt>
+          <dd>The number represents the Intel TDX module SVN. The complete definition of the claim is available in section **3.1 SEAM_SIGSTRUCT: INTEL® TDX MODULE SIGNATURE STRUCTURE** of Intel® TDX Loader Interface Specification <xref target="TDX-Loader-Interface-Specification"/></dd>
+          <dt>tdx_td_attributes</dt>
+          <dd>The hexadecimal string corresponds to a byte array of length 8. These are the attributes associated with the Trusted Domain (TD).  The complete definitions of the claims mentioned below are available in **A.3.4. TD Attributes**  of <xref target="TDX-DCAP-Quoting-Library"/></dd>
+          <dt>tdx_td_attributes_debug</dt>
+          <dd>The boolean value indicates whether the TD runs in TD debug mode (set to 1) or not (set to 0). In TD debug mode, the CPU state and private memory are accessible by the host VMM.</dd>
+          <dt>tdx_td_attributes_key_locker</dt>
+          <dd>The boolean value indicates whether the TD is allowed to use Key Locker.</dd>
+         <dt>tdx_td_attributes_perfmon</dt>
+          <dd>The boolean value indicates whether the TD is allowed to use Perfmon and PERF_METRICS capabilities.</dd>
+         <dt>tdx_td_attributes_protection_keys</dt>
+          <dd>The boolean value incidcates whether the TD is allowed to use Supervisor Protection Keys.</dd>
+         <dt>tdx_td_attributes_septve_disable</dt>
+          <dd>The boolean value that determines whether to disable EPT violation conversion to #VE on TD access of PENDING pages.</dd>
+          </dl>
      </section>
     <section>
         <name>Attester claims</name>
        <dl newline="true">
           <dt>attester_advisory_ids:</dt>
-          <dd>Array of Advisory IDs referring to Intel security advisories that provide insight into the reason(s) for the value of tcbStatus of the platform TCB level being evaluated. See **advisoryIDs** in <xref target="TDX-API-Management-Portal"/>.</dd>
+          <dd>Array of Advisory IDs referring to Intel security advisories that provide insight into the reason(s) for the value of tcbStatus of the platform TCB level being evaluated. See **advisoryIDs** in Intel® Trusted Services API Management Developer Portal <xref target="TDX-API-Management-Portal"/>.</dd>
           <dt>attester_tcb_status:</dt>
-          <dd>The string value represents the TCB level status of the platform being evaluated. See **tcbStatus** in <xref target="TDX-API-Management-Portal"/>.</dd>
-          /dl>
+          <dd>The string value represents the TCB level status of the platform being evaluated. See **tcbStatus** in Intel® Trusted Services API Management Developer Portal <xref target="TDX-API-Management-Portal"/>.</dd>
+       </dl>
     </section>
     </section>
     <section>
@@ -279,15 +324,22 @@ source code goes here [REPLACE]
             <date month="Feb" year="2023"/>
           </front>
         </reference>
-        <reference anchor="asdad">
+         <reference anchor="TDX-DCAP-Quoting-Library" target="https://download.01.org/intel-sgx/latest/dcap-latest/linux/docs/Intel_TDX_DCAP_Quoting_Library_API.pdf">
           <front>
-            <title>Title [REPLACE]</title>
-            <author initials="Initials [REPLACE]" surname="Surname [REPLACE]">
-              <organization/>
-               <!-- <organization>Organization [REPLACE]</organization> -->
+            <title>Intel® Trust Domain Extensions Data Center Attestation Primitives (Intel® TDX DCAP): Quote Generation Library and Quote Verification Library</title>
+            <author>
+              <organization>Intel</organization>
             </author>
-            <date year="2006"/>
-            <!-- [CHECK] -->
+            <date month="Aug" year="2023"/>
+          </front>
+        </reference>
+         <reference anchor="TDX-Loader-Interface-Specification" target="https://cdrdv2.intel.com/v1/dl/getContent/733584">
+          <front>
+            <title>Intel® Trust Domain Extensions - SEAM Loader (SEAMLDR) Interface Specification</title>
+            <author>
+              <organization>Intel</organization>
+            </author>
+            <date month="Mar" year="2022"/>
           </front>
         </reference>
       </references>
