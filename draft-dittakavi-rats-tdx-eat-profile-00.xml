@@ -173,7 +173,7 @@
     </section>
     <section anchor="Security">
       <name>Security Considerations</name>
-      <t>This document should not affect the security of the Internet.</t>
+      <t>This specification re-uses the <xref target="EAT"/> and <xref target="JWT"/> specifications.  Hence, the security and privacy considerations of those specifications apply here as well.</t>
     </section>
   </middle>
   <back>
