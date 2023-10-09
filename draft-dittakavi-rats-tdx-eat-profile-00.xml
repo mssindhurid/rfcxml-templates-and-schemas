@@ -281,10 +281,6 @@
         </reference>
       </references>
     </references>
-    <section>
-      <name>Appendix</name>
-      <t>This becomes an Appendix</t>
-    </section>
     <section anchor="Acknowledgements" numbered="false">
       <name>Acknowledgements</name>
       <t>Thanks to Dave Thaler for reviewing the content and offering guidance in publishing the profile.</t>
