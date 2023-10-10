@@ -325,7 +325,6 @@
     /tcbinfohash/: "7c2b91b9aaaf0a9823f17bb6b31403fffee7fe0b658b41d9e802c6de8569096d"
           }
           }
-  
   /attester_runtime_data/: {
     /keys/: [
       {
@@ -384,7 +383,6 @@ https://portal.trustauthority.intel.com/eat_profile"
   /iss/: "Intel Trust Authority",
   /nbf/: 1696973271
 }
-          
      ]]></artwork>
     </section>
     <section anchor="Acknowledgements" numbered="false">
