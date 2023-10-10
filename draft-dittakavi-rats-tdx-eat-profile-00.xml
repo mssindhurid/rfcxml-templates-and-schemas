@@ -378,7 +378,12 @@ https://portal.trustauthority.intel.com/certs"
         ],
         "kid": "HCLAkPub",
         "kty": "RSA",
-        "n": "re9HMAABLCLoWzLjUztrLCBCCf5V1CarfWtsufM4hFS-E-SQuuEZemzwoYrW5QXTVfJv32wdSrWpwnxNjmjz6ThWeAZB9L-OE9iGgvYItR3_DCA2PYGDIfAt_dzSiyJhA4vnJHKXQLxcxW1CncrNDTkCKY4dPoheg9a4HN_smIds9U6My4e5tKe0dB-b2FjZOGD9ZlQd30GxVhjc4EZNZfhL__1P8kFDOe2mn3I1bY2H65ryKxykUqEy90hhWSipVol7CSjhgIsu--owm1UE4PvsJ5SwGd4paWrhGoSw2XHnyPNoGIEsN07IY3RasHH7NyeWW9c_4z0-52HyTx9EGw"
+        "n": "re9HMAABLCLoWzLjUztrLCBCCf5V1CarfWtsufM4hFS-E-SQuuEZemzwo
+          YrW5QXTVfJv32wdSrWpwnxNjmjz6ThWeAZB9L-OE9iGgvYItR3_DCA2PYGDIf
+          At_dzSiyJhA4vnJHKXQLxcxW1CncrNDTkCKY4dPoheg9a4HN_smIds9U6My4e
+          5tKe0dB-b2FjZOGD9ZlQd30GxVhjc4EZNZfhL__1P8kFDOe2mn3I1bY2H65ry
+          KxykUqEy90hhWSipVol7CSjhgIsu--owm1UE4PvsJ5SwGd4paWrhGoSw2XHny
+          PNoGIEsN07IY3RasHH7NyeWW9c_4z0-52HyTx9EGw"
       },
       {
         "e": "AQAB",
@@ -387,13 +392,21 @@ https://portal.trustauthority.intel.com/certs"
         ],
         "kid": "HCLEkPub",
         "kty": "RSA",
-        "n": "4bgbkQAAjeNvziwf0DEUuXhx6mZiaoToilKLN2KwIpEC9pt4fiJ7A6VjN1EPugLruIFWPFFnXXqwfsbPWnnAlaOVxfYb-Wjmsex7WHM2XvdRewHdXEffeQ3cINEzdY_EVXf-XN0dYhmP-W4ghbAt6I-mORODz8t5E7apYyHya4cPYFqFdOnp2NvotnkrTjz9gZqXj6FAu6vYi9EZRWgt4X_rv5j8ka7FsIPs1B9w4BW_3a4YyzCgY21jodzafjr4ioG9EbSnDCE99I2PcIkvFK2OD-l3WWlZQ5XA6DKvfh0SMZTOA6JnhYM7y6h14k9GR7x77Vy0xXGLMHYRxpf1dw"
+        "n": "4bgbkQAAjeNvziwf0DEUuXhx6mZiaoToilKLN2KwIpEC9pt4fiJ7A6VjN
+          1EPugLruIFWPFFnXXqwfsbPWnnAlaOVxfYb-Wjmsex7WHM2XvdRewHdXEffeQ
+          3cINEzdY_EVXf-XN0dYhmP-W4ghbAt6I-mORODz8t5E7apYyHya4cPYFqFdOn
+          p2NvotnkrTjz9gZqXj6FAu6vYi9EZRWgt4X_rv5j8ka7FsIPs1B9w4BW_3a4Y
+          yzCgY21jodzafjr4ioG9EbSnDCE99I2PcIkvFK2OD-l3WWlZQ5XA6DKvfh0SM
+          ZTOA6JnhYM7y6h14k9GR7x77Vy0xXGLMHYRxpf1dw"
       }
     ],
-    "user-data": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "user-data": "00000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000
+          00000000000000",
     "vm-configuration": {
       "console-enabled": true,
-      "root-cert-thumbprint": "6nZZnYaJc4KqUZ_yvA-mucFdYNouvlPnITnNMXsHl-0",
+      "root-cert-thumbprint": "6nZZnYaJc4KqUZ_yvA-mucFdYNouvlPnITnNMXsH
+          l-0",
       "secure-boot": false,
       "tpm-enabled": true,
       "tpm-persisted": false,
