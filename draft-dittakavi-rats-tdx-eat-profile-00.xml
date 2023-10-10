@@ -60,7 +60,7 @@
     <workgroup>Remote ATtestation ProcedureS</workgroup>
     <keyword>Internet-Draft</keyword>
     <abstract>
-      <t>Intel® Trust Domain Extensions (Intel® TDX) introduces architectural elements designed for the deployment of hardware-isolated virtual machines (VMs) known as trust domains (TDs). TDX is designed to provide a more secure and isolated environment for running sensitive workloads or applications. The Entity Attestation Token (EAT) profile outlines claims for an Intel TDX attestation result. These claims enable a relying party to establish trust with the environment. </t>
+      <t>Intel® Trust Domain Extensions (TDX) introduces architectural elements designed for the deployment of hardware-isolated virtual machines (VMs) known as trust domains (TDs). TDX is designed to provide a more secure and isolated environment for running sensitive workloads or applications. The Entity Attestation Token (EAT) profile outlines claims for an Intel TDX attestation result. These claims enable a relying party to establish trust with the environment. </t>
     </abstract>
   </front>
   <middle>   
@@ -142,7 +142,7 @@
           <dt>tdx_xfam</dt>
           <dd>The hexadecimal string represents a byte array of length 8, which contains a mask of CPU extended features that the TDX is allowed to use.</dd>
           <dt>tdx_seamsvn</dt>
-          <dd>The number represents the Intel TDX module SVN. The complete definition of the claim is available in section 3.1 SEAM_SIGSTRUCT: INTEL® TDX MODULE SIGNATURE STRUCTURE of Intel® TDX Loader Interface Specification <xref target="TDX-Loader-Interface-Specification"/></dd>
+          <dd>The number represents the Intel TDX module SVN. The complete definition of the claim is available in section 3.1 SEAM_SIGSTRUCT: INTEL® TDX MODULE SIGNATURE STRUCTURE of Intel® TDX Loader Interface Specification <xref target="TDX-Loader-Interface"/></dd>
           <dt>tdx_td_attributes</dt>
           <dd>The hexadecimal string corresponds to a byte array of length 8. These are the attributes associated with the Trust Domain (TD).  The complete definitions of the claims mentioned below are available in A.3.4. TD Attributes of <xref target="TDX-DCAP-Quoting-Library"/></dd>
           <dt>tdx_td_attributes_debug</dt>
@@ -270,7 +270,7 @@
             <date month="Aug" year="2023"/>
           </front>
         </reference>
-         <reference anchor="TDX-Loader-Interface-Specification" target="https://cdrdv2.intel.com/v1/dl/getContent/733584">
+         <reference anchor="TDX-Loader-Interface" target="https://cdrdv2.intel.com/v1/dl/getContent/733584">
           <front>
             <title>Intel® Trust Domain Extensions - SEAM Loader (SEAMLDR) Interface Specification</title>
             <author>
