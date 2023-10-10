@@ -290,6 +290,7 @@
         </reference>
         <reference anchor="Intel-Trust-Authority-EAT-Profile" target="https://portal.trustauthority.intel.com/eat_profile">
           <front>
+            <title>EAT profile of Intel® Trust Authority</title>
             <author>
               <organization>Intel</organization>
             </author>
