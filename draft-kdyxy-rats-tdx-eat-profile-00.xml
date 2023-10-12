@@ -137,7 +137,7 @@
           <dt>tdx_mrconfigid</dt>
           <dd>The 96 character hexadecimal string represents a byte array of length 48 containing the software-defined ID for non-owner-defined configuration of the TDX, e.g., runtime or Operating System (OS) configuration. </dd>
           <dt>tdx_mrowner</dt>
-          <dd>The 96 character hexadecimal string represents a byte array of length 48 containing the software-defined ID for the TDX’s owner.</dd>
+          <dd>The 96 character hexadecimal string represents a byte array of length 48 containing the software-defined ID for the TDX's owner.</dd>
           <dt>tdx_mrownerconfig</dt>
           <dd>The 96 character hexadecimal string represents a byte array of length 48 containing the software-defined ID for owner-defined configuration of the TDX, e.g., specific to the workload rather than the runtime or OS.</dd>
           <dt>tdx_report_data</dt>
