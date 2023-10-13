@@ -178,6 +178,12 @@
       <name>IANA Considerations</name>   
       <section>
         <name>JWT claims registered by this document</name>
+        <t><list style="symbols">
+  <t>Claim Name: Nonce</t>
+  <t>Claim Description: Nonce</t>
+  <t>Change Controller: IESG</t>
+  <t>Specification Document(s): <strong>this document</strong></t>
+</list></t>
       </section>
     </section>
     <section anchor="Security">
