@@ -159,7 +159,7 @@
          <dt>tdx_td_attributes_perfmon</dt>
           <dd>The boolean value indicates whether the TD is allowed to use Perfmon and PERF_METRICS capabilities.</dd>
          <dt>tdx_td_attributes_protection_keys</dt>
-          <dd>The boolean value incidcates whether the TD is allowed to use Supervisor Protection Keys.</dd>
+          <dd>The boolean value indicates whether the TD is allowed to use Supervisor Protection Keys.</dd>
          <dt>tdx_td_attributes_septve_disable</dt>
           <dd>The boolean value that determines whether to disable EPT violation conversion to #VE on TD access of PENDING pages.</dd>
           </dl>
@@ -176,129 +176,129 @@
     </section>
     <section anchor="IANA">
       <name>IANA Considerations</name>   
-           <section>
+            <section>
         <name>JWT claims registered by this document</name>
    <t>This specification adds the following values to the "JSON Web Token
 Claims" registry established by the JWT specification</t>
          <t>IANA is requested to register the following claims.</t>
   <t>Claim Name: tdx_mrsignerseam</t>
-  <t>Claim Description: The 96 character hexadecimal string represents a byte array of length 48 containing the measurement of the TDX module signer, provided it is valid.</t>
-  <t>Change Controller: IESG</t>
+  <t>Claim Description: TDX module signer</t>
+  <t>Change Controller: Greg Kostal</t>
   <t>Specification Document(s): this document</t>
 
   <t>Claim Name: tdx_mrseam</t>
-  <t>Claim Description: The 96 character hexadecimal string represents a byte array of length 48 containing the measurement of the Intel TDX module.</t>
-  <t>Change Controller: IESG</t>
+  <t>Claim Description: Measurement of the TDX module</t>
+  <t>Change Controller: Greg Kostal</t>
   <t>Specification Document(s): this document</t>
 
  <t>Claim Name: tdx_mrtd</t>
-  <t>Claim Description: The 96 character hexadecimal string represents a byte array of length 48 containing the measurement of the initial contents of the TDX.</t>
-  <t>Change Controller: IESG</t>
+  <t>Claim Description: Measurement of TDX initial contents</t>
+  <t>Change Controller: Greg Kostal</t>
   <t>Specification Document(s): this document</t>
 
  <t>Claim Name: tdx_rtmr0</t>
-  <t>Claim Description: The 96 character hexadecimal string represents a byte array of length 48 containing the runtime extendable measurement register.</t>
-  <t>Change Controller: IESG</t>
+  <t>Claim Description: Runtime extendable measurement register</t>
+  <t>Change Controller: Greg Kostal</t>
   <t>Specification Document(s): this document</t>
 
  <t>Claim Name: tdx_rtmr1</t>
-  <t>Claim Description: The 96 character hexadecimal string represents a byte array of length 48 containing the runtime extendable measurement register.</t>
-  <t>Change Controller: IESG</t>
+  <t>Claim Description: Runtime extendable measurement register</t>
+  <t>Change Controller: Greg Kostal</t>
   <t>Specification Document(s): this document</t>
 
 <t>Claim Name: tdx_rtmr2</t>
-  <t>Claim Description: The 96 character hexadecimal string represents a byte array of length 48 containing the runtime extendable measurement register.</t>
-  <t>Change Controller: IESG</t>
+  <t>Claim Description: Runtime extendable measurement register</t>
+  <t>Change Controller: Greg Kostal</t>
   <t>Specification Document(s): this document</t>
 
 <t>Claim Name: tdx_rtmr3</t>
-  <t>Claim Description: The 96 character hexadecimal string represents a byte array of length 48 containing the runtime extendable measurement register.</t>
-  <t>Change Controller: IESG</t>
+  <t>Claim Description: Runtime extendable measurement register</t>
+  <t>Change Controller: Greg Kostal</t>
   <t>Specification Document(s): this document</t>
 
 
 <t>Claim Name: tdx_mrconfigid</t>
-  <t>Claim Description: The 96 character hexadecimal string represents a byte array of length 48 containing the software-defined ID for non-owner-defined configuration of the TDX, e.g., runtime or Operating System (OS) configuration.</t>
-  <t>Change Controller: IESG</t>
+  <t>Claim Description: Software-defined ID for non-owner-defined configuration of the TDX</t>
+  <t>Change Controller: Greg Kostal</t>
   <t>Specification Document(s): this document</t>
 
 <t>Claim Name: tdx_mrowner</t>
-  <t>Claim Description: The 96 character hexadecimal string represents a byte array of length 48 containing the software-defined ID for the TDX's owner.</t>
-  <t>Change Controller: IESG</t>
+  <t>Claim Description: Software-defined ID for the TDX's owner</t>
+  <t>Change Controller: Greg Kostal</t>
   <t>Specification Document(s): this document</t>
 
 <t>Claim Name: tdx_mrownerconfig</t>
-  <t>Claim Description: The 96 character hexadecimal string represents a byte array of length 48 containing the software-defined ID for owner-defined configuration of the TDX, e.g., specific to the workload rather than the runtime or OS.</t>
-  <t>Change Controller: IESG</t>
+  <t>Claim Description: Software-defined ID for owner-defined configuration of the TDX</t>
+  <t>Change Controller: Greg Kostal</t>
   <t>Specification Document(s): this document</t>
 
 
 <t>Claim Name: tdx_report_data</t>
-  <t>Claim Description: The 128 character hexadecimal string represents a byte array of length 64. In this context, the TDX has the flexibility to include 64 bytes of custom data in a TDX Report. For instance, this space can be used to hold a nonce, a public key, or a hash of a larger block of data.</t>
-  <t>Change Controller: IESG</t>
+  <t>Claim Description: Custom data in a TDX Report</t>
+  <t>Change Controller: Greg Kostal</t>
   <t>Specification Document(s): this document</t>
 
 <t>Claim Name: tdx_seam_attributes</t>
-  <t>Claim Description: The 16 character hexadecimal string represents a byte array of length 8 containing additional configuration of the TDX module.</t>
-  <t>Change Controller: IESG</t>
+  <t>Claim Description: Additional configuration of the TDX module</t>
+  <t>Change Controller: Greg Kostal</t>
   <t>Specification Document(s): this document</t>
 
 <t>Claim Name: tdx_tee_tcb_svn</t>
-  <t>Claim Description: The 32 character hexadecimal string represents a byte array of length 16 describing the Trusted Computing Base (TCB) Security Version Numbers (SVNs) of TDX.</t>
-  <t>Change Controller: IESG</t>
+  <t>Claim Description: Trusted Computing Base (TCB) Security Version Numbers (SVNs) of TDX</t>
+  <t>Change Controller: Greg Kostal</t>
   <t>Specification Document(s): this document</t>
 
 <t>Claim Name: tdx_xfam</t>
-  <t>Claim Description: The 16 character hexadecimal string represents a byte array of length 8 containing a mask of CPU extended features that the TDX is allowed to use.</t>
-  <t>Change Controller: IESG</t>
+  <t>Claim Description:Mask of CPU extended features that the TDX is allowed to use</t>
+  <t>Change Controller: Greg Kostal</t>
   <t>Specification Document(s): this document</t>
 
 
 <t>Claim Name: tdx_seamsvn</t>
-  <t>Claim Description: The number represents the Intel TDX module SVN. The complete definition of the claim is available in section 3.1 SEAM_SIGSTRUCT: INTEL® TDX MODULE SIGNATURE STRUCTURE of Intel® TDX Loader Interface Specification <xref target="TDX-Loader-Interface"/></t>
-  <t>Change Controller: IESG</t>
+  <t>Claim Description: Intel TDX module Security Version Number (SVN)</t>
+  <t>Change Controller: Greg Kostal</t>
   <t>Specification Document(s): this document</t>
 
 <t>Claim Name: tdx_td_attributes</t>
-  <t>Claim Description: The 16 character hexadecimal string represents a byte array of length 8. These are the attributes associated with the Trust Domain (TD).  The complete definitions of the claims mentioned below are available in A.3.4. TD Attributes of <xref target="TDX-DCAP-Quoting-Library"/></t>
-  <t>Change Controller: IESG</t>
+  <t>Claim Description: Attributes associated with the Trust Domain (TD)</t>
+  <t>Change Controller: Greg Kostal</t>
   <t>Specification Document(s): this document</t>
 
 <t>Claim Name: tdx_td_attributes_debug</t>
-  <t>Claim Description: The boolean value indicates whether the TD runs in TD debug mode (set to 1) or not (set to 0). In TD debug mode, the CPU state and private memory are accessible by the host VMM.</t>
-<t>Change Controller: IESG</t>
+  <t>Claim Description: Indicates whether the TD runs in TD debug mode (set to 1) or not (set to 0)</t>
+<t>Change Controller: Greg Kostal</t>
   <t>Specification Document(s): this document</t>
 
 <t>Claim Name: tdx_td_attributes_key_locker</t>
-  <t>Claim Description: The boolean value indicates whether the TD is allowed to use Key Locker.</t>
-<t>Change Controller: IESG</t>
+  <t>Claim Description: Indicates whether the TD is allowed to use Key Locker</t>
+<t>Change Controller: Greg Kostal</t>
   <t>Specification Document(s): this document</t>
 
 <t>Claim Name: tdx_td_attributes_perfmon</t>
-  <t>Claim Description: The boolean value indicates whether the TD is allowed to use Perfmon and PERF_METRICS capabilities.</t>
-<t>Change Controller: IESG</t>
+  <t>Claim Description: Indicates whether the TD is allowed to use Perfmon and PERF_METRICS capabilities</t>
+<t>Change Controller: Greg Kostal</t>
   <t>Specification Document(s): this document</t>
 
 
 <t>Claim Name: tdx_td_attributes_protection_keys</t>
-  <t>Claim Description: The boolean value incidcates whether the TD is allowed to use Supervisor Protection Keys.</t>
-<t>Change Controller: IESG</t>
+  <t>Claim Description: Indicates whether the TD is allowed to use Supervisor Protection Keys</t>
+<t>Change Controller: Greg Kostal</t>
   <t>Specification Document(s): this document</t>
 
 
 <t>Claim Name: tdx_td_attributes_septve_disable</t>
-  <t>Claim Description: The boolean value that determines whether to disable EPT violation conversion to #VE on TD access of PENDING pages.</t>
-<t>Change Controller: IESG</t>
+  <t>Claim Description: Determines whether to disable EPT violation conversion to #VE on TD access of PENDING pages</t>
+<t>Change Controller: Greg Kostal</t>
   <t>Specification Document(s): this document</t>
 
 <t>Claim Name: attester_advisory_ids</t>
-  <t>Claim Description: Array of Advisory IDs referring to Intel security advisories that provide insight into the reason(s) for the value of tcbStatus of the platform TCB level being evaluated. See advisoryIDs in Intel® Trusted Services API Management Developer Portal <xref target="TDX-API-Management-Portal"/></t>
-<t>Change Controller: IESG</t>
+  <t>Claim Description: Intel security advisories that provide insight into the reason(s) for the value of tcbStatus of the platform TCB level being evaluated</t>
+<t>Change Controller: Greg Kostal</t>
   <t>Specification Document(s): this document</t>
 
 <t>Claim Name: attester_tcb_status</t>
-  <t>Claim Description: The string value represents the TCB level status of the platform being evaluated. See tcbStatus in <xref target="TDX-API-Management-Portal"/>.</t>
-<t>Change Controller: IESG</t>
+  <t>Claim Description: TCB level status of the platform being evaluated</t>
+<t>Change Controller: Greg Kostal</t>
   <t>Specification Document(s): this document</t>
 
       </section>
