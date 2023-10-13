@@ -177,8 +177,7 @@
     <section anchor="IANA">
       <name>IANA Considerations</name>   
       <section>
-        <name>JWT Claims Registered by this Document</name>
-         <t>IANA is requested to register the following claims.</t> 
+        <name>JWT claims registered by this document</name>
       </section>
     </section>
     <section anchor="Security">
