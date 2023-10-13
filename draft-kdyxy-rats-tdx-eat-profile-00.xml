@@ -175,7 +175,17 @@
     </section>
     </section>
     <section anchor="IANA">
-      <name>IANA Considerations</name>
+      <name>IANA Considerations</name>   
+      <section>
+        <name>JWT Claims Registered by this Document</name>
+         <t>IANA is requested to register the following claims.</t>  
+        <t><list style="symbols">
+        <t>Claim Name: Nonce</t>
+        <t>Claim Description: Nonce</t>
+        <t>Change Controller: IESG</t>
+        <t>Specification Document(s): <strong>this document</strong></t>
+      </list></t>
+      </section>
     </section>
     <section anchor="Security">
       <name>Security Considerations</name>
