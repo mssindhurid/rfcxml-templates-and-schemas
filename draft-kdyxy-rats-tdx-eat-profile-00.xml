@@ -23,7 +23,7 @@
   xml:lang="en"
   version="3">
   <front>
-    <title abbrev="TDX EAT profile">EAT profile for Intel® Trust Domain Extensions (TDX) attestation result</title>
+    <title abbrev="TDX EAT profile">EAT profile for Intel® &#169 Trust Domain Extensions (TDX) attestation result</title>
     <seriesInfo name="Internet-Draft" value="draft-kdyxy-rats-tdx-eat-profile-00"/>
     <author fullname="Greg Kostal" initials="G." surname="Kostal">
       <organization>Microsoft</organization>
