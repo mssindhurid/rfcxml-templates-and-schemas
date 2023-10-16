@@ -183,59 +183,60 @@ Claims" registry established by the JWT specification</t>
          <t>IANA is requested to register the following claims.</t>
   <figure>
   <artwork>  
-  +=====================================+=========================================================================+=================================+
-  |  Claim name                         |   Claim description                                                     |       Specification document    |           
-  +=====================================+=========================================================================+=================================+
-  |  tdx_mrsignerseam                   |   TDX module signer                                                     |       This document             |
-  +-------------------------------------+-------------------------------------------------------------------------+---------------------------------+
-  |  tdx_mrseam                         |   Measurement of the TDX module                                         |       This document             |
-  +-------------------------------------+-------------------------------------------------------------------------+---------------------------------+
-  |  tdx_mrtd                           |   Measurement of TDX initial contents                                   |       This document             |
-  +-------------------------------------+-------------------------------------------------------------------------+---------------------------------+
-  |  tdx_rtmr0                          |   Runtime extendable measurement register                               |       This document             |
-  +-------------------------------------+-------------------------------------------------------------------------+---------------------------------+
-  |  tdx_rtmr1                          |   Runtime extendable measurement register                               |       This document             |
-  +-------------------------------------+-------------------------------------------------------------------------+---------------------------------+
-  |  tdx_rtmr2                          |   Runtime extendable measurement register                               |       This document             |
-  +-------------------------------------+-------------------------------------------------------------------------+---------------------------------+
-  |  tdx_rtmr3                          |   Runtime extendable measurement register                               |       This document             |
-  +-------------------------------------+-------------------------------------------------------------------------+---------------------------------+
-  |  tdx_mrconfigid                     |   Software-defined ID for non-owner-defined configuration of the TDX    |       This document             |
-  +-------------------------------------+-------------------------------------------------------------------------+---------------------------------+
-  |  tdx_mrowner                        |   Software-defined ID for the TDX's owner                               |       This document             |
-  +-------------------------------------+-------------------------------------------------------------------------+---------------------------------+
-  |  tdx_mrownerconfig                  |   Software-defined ID for owner-defined configuration of the TDX        |       This document             |
-  +-------------------------------------+-------------------------------------------------------------------------+---------------------------------+
-  |  tdx_report_data                    |   Claim Description: Custom data in a TDX Report                        |       This document             |
-  +-------------------------------------+-------------------------------------------------------------------------+---------------------------------+
-  |  tdx_seam_attributes                |   Additional configuration of the TDX module                            |       This document             |
-  +-------------------------------------+-------------------------------------------------------------------------+---------------------------------+
-  |  tdx_tee_tcb_svn                    |   Trusted Computing Base (TCB) Security Version Numbers (SVNs) of TDX   |       This document             |
-  +-------------------------------------+-------------------------------------------------------------------------+---------------------------------+
-  |  tdx_xfam                           |   Mask of CPU extended features that the TDX is allowed to use          |       This document             |
-  +-------------------------------------+-------------------------------------------------------------------------+---------------------------------+
-  |  tdx_seamsvn                        |   Intel TDX module Security Version Number (SVN)                        |       This document             |
-  +-------------------------------------+-------------------------------------------------------------------------+---------------------------------+
-  |  tdx_td_attributes                  |   Attributes associated with the Trust Domain (TD)                      |       This document             |
-  +-------------------------------------+-------------------------------------------------------------------------+---------------------------------+
-  |  tdx_td_attributes_debug            |   Indicates whether the TD runs in TD debug mode (set to 1) or not      |       This document             |
-  |                                     |   (set to 0)                                                            |       This document             |
-  +-------------------------------------+-------------------------------------------------------------------------+---------------------------------+
-  |  tdx_td_attributes_key_locker       |   Indicates whether the TD is allowed to use Key Locker                 |       This document             |
-  +-------------------------------------+-------------------------------------------------------------------------+---------------------------------+
-  |  tdx_td_attributes_perfmon          |   Indicates whether the TD is allowed to use Perfmon and PERF_METRICS   |       This document             |
-  |                                     |   capabilities                                                          |                                 |
-  +-------------------------------------+-------------------------------------------------------------------------+---------------------------------+
-  |  tdx_td_attributes_protection_keys  |   Indicates whether the TD is allowed to use Supervisor Protection Keys |       This document             |
-  +-------------------------------------+-------------------------------------------------------------------------+---------------------------------+
-  |  tdx_td_attributes_septve_disable   |   Determines whether to disable EPT violation conversion to #VE on TD   |       This document             |
-  |                                     |   access of PENDING pages                                               |                                 |
-  +-------------------------------------+-------------------------------------------------------------------------+---------------------------------+
-  |  attester_advisory_ids              |   Intel security advisories that provide insight into the reason(s)     |       This document             |
-  |                                     |   for the value of tcbStatus of the platform TCB level being evaluated  |                                 |
-  +-------------------------------------+-------------------------------------------------------------------------+---------------------------------+
-  |  attester_tcb_status                |   TCB level status of the platform being evaluated                      |       This document             |
-  +-------------------------------------+-------------------------------------------------------------------------+---------------------------------+
+  +=====================================+================================================+=========================+
+  |  Claim name                         |   Claim description                                                     |  Specification document |           
+  +=====================================+================================================+=========================+
+  |  tdx_mrsignerseam                   |   TDX module signer                                                     |  This document          |
+  +-------------------------------------+------------------------------------------------+-------------------------+
+  |  tdx_mrseam                         |   Measurement of the TDX module                                         |  This document          |
+  +-------------------------------------+------------------------------------------------+-------------------------+
+  |  tdx_mrtd                           |   Measurement of TDX initial contents                                   |  This document          |
+  +-------------------------------------+--------------------------------------------  --+-------------------------+
+  |  tdx_rtmr0                          |   Runtime extendable measurement register                               |  This document          |
+  +-------------------------------------+------------------------------------------------+-------------------------+
+  |  tdx_rtmr1                          |   Runtime extendable measurement register                               |  This document          |
+  +-------------------------------------+------------------------------------------------+-------------------------+
+  |  tdx_rtmr2                          |   Runtime extendable measurement register                               |  This document          |
+  +-------------------------------------+------------------------------------------------+-------------------------+
+  |  tdx_rtmr3                          |   Runtime extendable measurement register                               |  This document          |
+  +-------------------------------------+------------------------------------------------+-------------------------+
+  |  tdx_mrconfigid                     |   Software-defined ID for non-owner-defined    |  This document         |
+  |  tdx_mrconfigid                     |   configuration of the TDX                     |                        |
+  +-------------------------------------+-------------------------------------------------------------------------+-------------------------+
+  |  tdx_mrowner                        |   Software-defined ID for the TDX's owner                               |  This document          |
+  +-------------------------------------+-------------------------------------------------------------------------+-------------------------+
+  |  tdx_mrownerconfig                  |   Software-defined ID for owner-defined configuration of the TDX        |  This document          |
+  +-------------------------------------+-------------------------------------------------------------------------+-------------------------+
+  |  tdx_report_data                    |   Claim Description: Custom data in a TDX Report                        |  This document          |
+  +-------------------------------------+-------------------------------------------------------------------------+-------------------------+
+  |  tdx_seam_attributes                |   Additional configuration of the TDX module                            |  This document          |
+  +-------------------------------------+-------------------------------------------------------------------------+-------------------------+
+  |  tdx_tee_tcb_svn                    |   Trusted Computing Base (TCB) Security Version Numbers (SVNs) of TDX   |  This document          |
+  +-------------------------------------+-------------------------------------------------------------------------+-------------------------+
+  |  tdx_xfam                           |   Mask of CPU extended features that the TDX is allowed to use          |  This document          |
+  +-------------------------------------+-------------------------------------------------------------------------+-------------------------+
+  |  tdx_seamsvn                        |   Intel TDX module Security Version Number (SVN)                        |  This document          |
+  +-------------------------------------+-------------------------------------------------------------------------+-------------------------+
+  |  tdx_td_attributes                  |   Attributes associated with the Trust Domain (TD)                      |  This document          |
+  +-------------------------------------+-------------------------------------------------------------------------+-------------------------+
+  |  tdx_td_attributes_debug            |   Indicates whether the TD runs in TD debug mode (set to 1) or not      |  This document          |
+  |                                     |   (set to 0)                                                            |                         |
+  +-------------------------------------+-------------------------------------------------------------------------+-------------------------+
+  |  tdx_td_attributes_key_locker       |   Indicates whether the TD is allowed to use Key Locker                 |  This document          |
+  +-------------------------------------+-------------------------------------------------------------------------+-------------------------+
+  |  tdx_td_attributes_perfmon          |   Indicates whether the TD is allowed to use Perfmon and PERF_METRICS   |  This document          |
+  |                                     |   capabilities                                                          |                         |
+  +-------------------------------------+-------------------------------------------------------------------------+-------------------------+
+  |  tdx_td_attributes_protection_keys  |   Indicates whether the TD is allowed to use Supervisor Protection Keys |  This document          |
+  +-------------------------------------+-------------------------------------------------------------------------+-------------------------+
+  |  tdx_td_attributes_septve_disable   |   Determines whether to disable EPT violation conversion to #VE on TD   |  This document          |
+  |                                     |   access of PENDING pages                                               |                         |
+  +-------------------------------------+-------------------------------------------------------------------------+-------------------------+
+  |  attester_advisory_ids              |   Intel security advisories that provide insight into the reason(s)     |  This document          |
+  |                                     |   for the value of tcbStatus of the platform TCB level being evaluated  |                         |
+  +-------------------------------------+-------------------------------------------------------------------------+-------------------------+
+  |  attester_tcb_status                |   TCB level status of the platform being evaluated                      |  This document          |
+  +-------------------------------------+-------------------------------------------------------------------------+-------------------------+
   </artwork>
 </figure>
       </section>
