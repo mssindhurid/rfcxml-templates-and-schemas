@@ -88,7 +88,7 @@
         <name>TDX profile claims</name>
     <section>
         <name>JWT claims</name>
-        <t>The complete definitions of the following claims are available in the IETF [JWT] specification. </t>
+        <t>The complete definitions of the following claims are available in the IETF JWT specification. </t>
          <dl newline="true">
           <dt>iat</dt>
           <dd>The "iat" (issued at) claim identifies the time at which the JWT was issued.</dd>
@@ -104,7 +104,7 @@
      </section>
     <section>
         <name>EAT claims</name>   
-       <t>The complete definitions of the following claims are available in the [EAT] specification.</t>
+       <t>The complete definitions of the following claims are available in the EAT specification.</t>
          <dl newline="true">
           <dt>eat_profile</dt>
           <dd>The "eat_profile" claim identifies an EAT profile by either a URL or an OID.</dd>
@@ -151,7 +151,7 @@
           <dt>tdx_seamsvn</dt>
           <dd>The number represents the Intel TDX module SVN. The complete definition of the claim is available in section 3.1 SEAM_SIGSTRUCT: INTEL® TDX MODULE SIGNATURE STRUCTURE of Intel® TDX Loader Interface Specification <xref target="TDX-Loader-Interface"/></dd>
           <dt>tdx_td_attributes</dt>
-          <dd>The 16 character hexadecimal string represents a byte array of length 8. These are the attributes associated with the Trust Domain (TD).  The complete definitions of the claims mentioned below are available in A.3.4. TD Attributes of <xref target="TDX-DCAP-Quoting-Library"/></dd>
+          <dd>The 16 character hexadecimal string represents a byte array of length 8. These are the attributes associated with the Trust Domain (TD).  The complete definitions of the claims mentioned below are available in the section A.3.4. TD Attributes of <xref target="TDX-DCAP-Quoting-Library"/></dd>
           <dt>tdx_td_attributes_debug</dt>
           <dd>The boolean value indicates whether the TD runs in TD debug mode (set to 1) or not (set to 0). In TD debug mode, the CPU state and private memory are accessible by the host VMM.</dd>
           <dt>tdx_td_attributes_key_locker</dt>
@@ -363,18 +363,6 @@ Claims" registry established by the JWT specification</t>
             <date month="May" year="2015"/>
             </front>
         </reference>
-      </references>
-      <references>
-        <name>Informative References</name>
-        <reference anchor="JTAG" target="https://ieeexplore.ieee.org/document/5412866">
-        <front>
-          <title>IEEE Standard for Reduced-Pin and Enhanced-Functionality Test Access Port and Boundary-Scan Architecture</title>
-          <author >
-            <organization></organization>
-          </author>
-          <date year="2010" month="February"/>
-        </front>
-      </reference>
         <reference anchor="TDX" target="https://cdrdv2.intel.com/v1/dl/getContent/690419">
           <front>
             <title>Intel® Trust Domain Extensions</title>
@@ -384,7 +372,7 @@ Claims" registry established by the JWT specification</t>
             <date month="Feb" year="2023"/>
           </front>
         </reference>
-        <reference anchor="TDX-API-Management-Portal" target="https://api.portal.trustedservices.intel.com/documentation">
+          <reference anchor="TDX-API-Management-Portal" target="https://api.portal.trustedservices.intel.com/documentation">
           <front>
             <title>Intel® Trust Domain Extensions</title>
             <author>
@@ -411,11 +399,41 @@ Claims" registry established by the JWT specification</t>
             <date month="Mar" year="2022"/>
           </front>
         </reference>
+      </references>
+      <references>
+        <name>Informative References</name>
+        <reference anchor="JTAG" target="https://ieeexplore.ieee.org/document/5412866">
+        <front>
+          <title>IEEE Standard for Reduced-Pin and Enhanced-Functionality Test Access Port and Boundary-Scan Architecture</title>
+          <author >
+            <organization></organization>
+          </author>
+          <date year="2010" month="February"/>
+        </front>
+      </reference>
+         <reference anchor="Azure-Attestation" target="https://learn.microsoft.com/en-us/azure/attestation/overview">
+          <front>
+            <title>Microsoft Azure Attestation</title>
+            <author>
+              <organization>Microsoft</organization>
+            </author>
+            <date month="Mar" year="2021"/>
+          </front>
+        </reference>
         <reference anchor="Trust-Authority" target="https://www.intel.com/content/www/us/en/security/trust-authority.html">
           <front>
             <title>Intel® Trust Authority</title>
             <author>
               <organization>Intel</organization>
+            </author>
+            <date month="Oct" year="2023"/>
+          </front>
+        </reference>
+        <reference anchor="Azure-Attestation-EAT-Profile" target="https://portal.trustauthority.intel.com/eat_profile">
+          <front>
+            <title>EAT profile of Microsoft Azure Attestation</title>
+            <author>
+              <organization>Microsoft</organization>
             </author>
             <date month="Oct" year="2023"/>
           </front>
@@ -433,7 +451,7 @@ Claims" registry established by the JWT specification</t>
     </references>
     <section>
       <name>Example</name>
-       <t>The below example illustrates an attestation token generated by Intel® Trust Authority <xref target="Trust-Authority"/> during TDX validation, which reuses the previously mentioned claims. The attestation can be requested from a client within the confidential computing environment. <xref target="Trust-Authority-EAT-Profile"/> includes definitions of the following claims</t>
+       <t>The below example illustrates an attestation token generated by Intel® Trust Authority <xref target="Trust-Authority"/> during TDX validation, which reuses claims from this EAT profile. The attestation can be requested from a client within the confidential computing environment. <xref target="Trust-Authority-EAT-Profile"/> includes definitions of the following claims</t>
         <artwork><![CDATA[
       {
   "alg": "PS384",
