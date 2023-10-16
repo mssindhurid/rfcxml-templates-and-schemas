@@ -184,21 +184,21 @@ Claims" registry established by the JWT specification</t>
   <figure>
   <artwork>  
   +=====================================+================================================+=========================+
-  |  Claim name                         |   Claim description                                                     |  Specification document |           
+  |  Claim name                         |   Claim description                            |  Specification document |           
   +=====================================+================================================+=========================+
-  |  tdx_mrsignerseam                   |   TDX module signer                                                     |  This document          |
+  |  tdx_mrsignerseam                   |   TDX module signer                            |  This document          |
   +-------------------------------------+------------------------------------------------+-------------------------+
-  |  tdx_mrseam                         |   Measurement of the TDX module                                         |  This document          |
+  |  tdx_mrseam                         |   Measurement of the TDX module                |  This document          |
   +-------------------------------------+------------------------------------------------+-------------------------+
-  |  tdx_mrtd                           |   Measurement of TDX initial contents                                   |  This document          |
+  |  tdx_mrtd                           |   Measurement of TDX initial contents          |  This document          |
   +-------------------------------------+--------------------------------------------  --+-------------------------+
-  |  tdx_rtmr0                          |   Runtime extendable measurement register                               |  This document          |
+  |  tdx_rtmr0                          |   Runtime extendable measurement register      |  This document          |
   +-------------------------------------+------------------------------------------------+-------------------------+
-  |  tdx_rtmr1                          |   Runtime extendable measurement register                               |  This document          |
+  |  tdx_rtmr1                          |   Runtime extendable measurement register      |  This document          |
   +-------------------------------------+------------------------------------------------+-------------------------+
-  |  tdx_rtmr2                          |   Runtime extendable measurement register                               |  This document          |
+  |  tdx_rtmr2                          |   Runtime extendable measurement register      |  This document          |
   +-------------------------------------+------------------------------------------------+-------------------------+
-  |  tdx_rtmr3                          |   Runtime extendable measurement register                               |  This document          |
+  |  tdx_rtmr3                          |   Runtime extendable measurement register      |  This document          |
   +-------------------------------------+------------------------------------------------+-------------------------+
   |  tdx_mrconfigid                     |   Software-defined ID for non-owner-defined    |  This document         |
   |  tdx_mrconfigid                     |   configuration of the TDX                     |                        |
