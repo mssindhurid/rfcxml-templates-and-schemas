@@ -239,6 +239,120 @@ Claims" registry established by the JWT specification</t>
   +-------------------------------------+-------------------------------------------------------------------------+-------------------------+
   </artwork>
 </figure>
+  <t>Claim Name: tdx_mrsignerseam</t>
+  <t>Claim Description: TDX module signer</t>
+  <t>Change Controller: Greg Kostal</t>
+  <t>Specification Document(s): this document</t>
+  +-----------------------------------------------+
+  <t>Claim Name: tdx_mrseam</t>
+  <t>Claim Description: Measurement of the TDX module</t>
+  <t>Change Controller: Greg Kostal</t>
+  <t>Specification Document(s): this document</t>
+  +-----------------------------------------------+
+ <t>Claim Name: tdx_mrtd</t>
+  <t>Claim Description: Measurement of TDX initial contents</t>
+  <t>Change Controller: Greg Kostal</t>
+  <t>Specification Document(s): this document</t>
+  +-----------------------------------------------+
+ <t>Claim Name: tdx_rtmr0</t>
+  <t>Claim Description: Runtime extendable measurement register</t>
+  <t>Change Controller: Greg Kostal</t>
+  <t>Specification Document(s): this document</t>
+  +-----------------------------------------------+
+ <t>Claim Name: tdx_rtmr1</t>
+  <t>Claim Description: Runtime extendable measurement register</t>
+  <t>Change Controller: Greg Kostal</t>
+  <t>Specification Document(s): this document</t>
+  +-----------------------------------------------+
+<t>Claim Name: tdx_rtmr2</t>
+  <t>Claim Description: Runtime extendable measurement register</t>
+  <t>Change Controller: Greg Kostal</t>
+  <t>Specification Document(s): this document</t>
+  +-----------------------------------------------+
+<t>Claim Name: tdx_rtmr3</t>
+  <t>Claim Description: Runtime extendable measurement register</t>
+  <t>Change Controller: Greg Kostal</t>
+  <t>Specification Document(s): this document</t>
+  +-----------------------------------------------+
+<t>Claim Name: tdx_mrconfigid</t>
+  <t>Claim Description: Software-defined ID for non-owner-defined configuration of the TDX</t>
+  <t>Change Controller: Greg Kostal</t>
+  <t>Specification Document(s): this document</t>
+ +-----------------------------------------------+
+<t>Claim Name: tdx_mrowner</t>
+  <t>Claim Description: Software-defined ID for the TDX's owner</t>
+  <t>Change Controller: Greg Kostal</t>
+  <t>Specification Document(s): this document</t>
+ +-----------------------------------------------+
+<t>Claim Name: tdx_mrownerconfig</t>
+  <t>Claim Description: Software-defined ID for owner-defined configuration of the TDX</t>
+  <t>Change Controller: Greg Kostal</t>
+  <t>Specification Document(s): this document</t>
+ +-----------------------------------------------+
+<t>Claim Name: tdx_report_data</t>
+  <t>Claim Description: Custom data in a TDX Report</t>
+  <t>Change Controller: Greg Kostal</t>
+  <t>Specification Document(s): this document</t>
+ +-----------------------------------------------+
+<t>Claim Name: tdx_seam_attributes</t>
+  <t>Claim Description: Additional configuration of the TDX module</t>
+  <t>Change Controller: Greg Kostal</t>
+  <t>Specification Document(s): this document</t>
+ +-----------------------------------------------+
+<t>Claim Name: tdx_tee_tcb_svn</t>
+  <t>Claim Description: Trusted Computing Base (TCB) Security Version Numbers (SVNs) of TDX</t>
+  <t>Change Controller: Greg Kostal</t>
+  <t>Specification Document(s): this document</t>
+ +-----------------------------------------------+
+<t>Claim Name: tdx_xfam</t>
+  <t>Claim Description:Mask of CPU extended features that the TDX is allowed to use</t>
+  <t>Change Controller: Greg Kostal</t>
+  <t>Specification Document(s): this document</t>
+ +-----------------------------------------------+
+<t>Claim Name: tdx_seamsvn</t>
+  <t>Claim Description: Intel TDX module Security Version Number (SVN)</t>
+  <t>Change Controller: Greg Kostal</t>
+  <t>Specification Document(s): this document</t>
+ +-----------------------------------------------+
+<t>Claim Name: tdx_td_attributes</t>
+  <t>Claim Description: Attributes associated with the Trust Domain (TD)</t>
+  <t>Change Controller: Greg Kostal</t>
+  <t>Specification Document(s): this document</t>
+ +-----------------------------------------------+
+<t>Claim Name: tdx_td_attributes_debug</t>
+  <t>Claim Description: Indicates whether the TD runs in TD debug mode (set to 1) or not (set to 0)</t>
+<t>Change Controller: Greg Kostal</t>
+  <t>Specification Document(s): this document</t>
+ +-----------------------------------------------+
+<t>Claim Name: tdx_td_attributes_key_locker</t>
+  <t>Claim Description: Indicates whether the TD is allowed to use Key Locker</t>
+<t>Change Controller: Greg Kostal</t>
+  <t>Specification Document(s): this document</t>
+ +-----------------------------------------------+
+<t>Claim Name: tdx_td_attributes_perfmon</t>
+  <t>Claim Description: Indicates whether the TD is allowed to use Perfmon and PERF_METRICS capabilities</t>
+<t>Change Controller: Greg Kostal</t>
+  <t>Specification Document(s): this document</t>
+ +-----------------------------------------------+
+<t>Claim Name: tdx_td_attributes_protection_keys</t>
+  <t>Claim Description: Indicates whether the TD is allowed to use Supervisor Protection Keys</t>
+<t>Change Controller: Greg Kostal</t>
+  <t>Specification Document(s): this document</t>
+ +-----------------------------------------------+
+<t>Claim Name: tdx_td_attributes_septve_disable</t>
+  <t>Claim Description: Determines whether to disable EPT violation conversion to #VE on TD access of PENDING pages</t>
+<t>Change Controller: Greg Kostal</t>
+  <t>Specification Document(s): this document</t>
+ +-----------------------------------------------+
+<t>Claim Name: attester_advisory_ids</t>
+  <t>Claim Description: Intel security advisories that provide insight into the reason(s) for the value of tcbStatus of the platform TCB level being evaluated</t>
+<t>Change Controller: Greg Kostal</t>
+  <t>Specification Document(s): this document</t>
+ +-----------------------------------------------+
+<t>Claim Name: attester_tcb_status</t>
+  <t>Claim Description: TCB level status of the platform being evaluated</t>
+<t>Change Controller: Greg Kostal</t>
+  <t>Specification Document(s): this document</t>
       </section>
     </section>
     <section anchor="Security">
