@@ -93,13 +93,13 @@
           <dt>iat</dt>
           <dd>The "iat" (issued at) claim identifies the time at which the JWT was issued.</dd>
           <dt>exp</dt>
-          <dd>The "exp" (expiration time) claim identifies the expiration time on or after which the JWT MUST NOT be accepted for processing. </dd>
+          <dd>The "exp" (expiration time) claim identifies the expiration time on or after which the JWT MUST NOT be accepted for processing.</dd>
           <dt>iss</dt>
           <dd>The "iss" (issuer) claim identifies the principal that issued the JWT.</dd>
           <dt>jti</dt>
           <dd>The "jti" (JWT ID) claim provides a unique identifier for the JWT.</dd>
           <dt>nbf</dt>
-          <dd>The "nbf" (not before) claim identifies the time before which the JWT MUST NOT be accepted for processing. </dd>
+          <dd>The "nbf" (not before) claim identifies the time before which the JWT MUST NOT be accepted for processing.</dd>
          </dl>
      </section>
     <section>
