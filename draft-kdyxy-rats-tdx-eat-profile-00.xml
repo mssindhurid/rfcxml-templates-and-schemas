@@ -572,7 +572,8 @@ https://portal.trustauthority.intel.com/eat_profile"
    "iat": 1697572007,
    "intuse": "generic",
    "iss": "https://maasand001.eus.attest.azure.net",
-   "jti": "fb5021d13a90f5b3f5642b30d8103715c8d76ee05c9062923a04af35d0347ade",
+   "jti": "fb5021d13a90f5b3f5642b30d8103715c8d76ee05c9062923a04af35d0
+          347ade",
    "nbf": 1697572007,
    "tdx_mrconfigid": "00000000000000000000000000000000000000000000000
           0000000000000000000000000000000000000000000000000",
