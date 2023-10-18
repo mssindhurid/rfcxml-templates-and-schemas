@@ -123,7 +123,7 @@
           <dt>tdx_mrsignerseam</dt>
           <dd>A 96-character hexadecimal string that represents a byte array of length 48 containing the measurement of the TDX module signer.</dd>
           <dt>tdx_mrseam</dt>
-          <dd>A 96-character hexadecimal string that represents a byte array of length 48 containing the measurement of the Intel TDX module.</dd>
+          <dd>A 96-character hexadecimal string that represents a byte array of length 48 containing the measurement of the TDX module.</dd>
           <dt>tdx_mrtd</dt>
           <dd>A 96-character hexadecimal string that represents a byte array of length 48 containing the measurement of the initial contents of the TDX.</dd>
           <dt>tdx_rtmr0</dt>
