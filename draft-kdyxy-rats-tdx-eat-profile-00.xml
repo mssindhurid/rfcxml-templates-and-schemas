@@ -60,7 +60,7 @@
     <workgroup>Remote ATtestation ProcedureS</workgroup>
     <keyword>Internet-Draft</keyword>
     <abstract>
-      <t>Intel® Trust Domain Extensions (TDX) introduces architectural elements designed for the deployment of hardware-isolated virtual machines (VMs) known as trust domains (TDs). TDX is designed to provide a more secure and isolated environment for running sensitive workloads or applications. This Entity Attestation Token (EAT) profile outlines claims for an Intel TDX attestation result. These claims enable a relying party to establish trust with the environment. </t>
+      <t>Intel® Trust Domain Extensions (TDX) introduces architectural elements designed for the deployment of hardware-isolated virtual machines (VMs) known as trust domains (TDs). TDX is designed to provide a secure and isolated environment for running sensitive workloads or applications. This Entity Attestation Token (EAT) profile outlines claims for an Intel TDX attestation result. These claims enable a relying party to establish trust with the environment. </t>
     </abstract>
   </front>
   <middle>   
@@ -121,47 +121,47 @@
        <t>The complete definitions of the claims are available in the section A.3.2 TD Quote Body of Intel® TDX DCAP Quoting Library API <xref target="TDX-DCAP-Quoting-Library"/>.</t>
           <dl newline="true">
           <dt>tdx_mrsignerseam</dt>
-          <dd>The 96 character hexadecimal string represents a byte array of length 48 containing the measurement of the TDX module signer, provided it is valid.</dd>
+          <dd>A 96-character hexadecimal string that represents a byte array of length 48 containing the measurement of the TDX module signer.</dd>
           <dt>tdx_mrseam</dt>
-          <dd>The 96 character hexadecimal string represents a byte array of length 48 containing the measurement of the Intel TDX module.</dd>
+          <dd>A 96-character hexadecimal string that represents a byte array of length 48 containing the measurement of the Intel TDX module.</dd>
           <dt>tdx_mrtd</dt>
-          <dd>The 96 character hexadecimal string represents a byte array of length 48 containing the measurement of the initial contents of the TDX.</dd>
+          <dd>A 96-character hexadecimal string that represents a byte array of length 48 containing the measurement of the initial contents of the TDX.</dd>
           <dt>tdx_rtmr0</dt>
-          <dd>The 96 character hexadecimal string represents a byte array of length 48 containing the runtime extendable measurement register.</dd>
+          <dd>A 96-character hexadecimal string that represents a byte array of length 48 containing the runtime extendable measurement register.</dd>
           <dt>tdx_rtmr1</dt>
-          <dd>The 96 character hexadecimal string represents a byte array of length 48 containing the runtime extendable measurement register.</dd>
+          <dd>A 96-character hexadecimal string that represents a byte array of length 48 containing the runtime extendable measurement register.</dd>
           <dt>tdx_rtmr2</dt>
-          <dd>The 96 character hexadecimal string represents a byte array of length 48 containing the runtime extendable measurement register.</dd>
+          <dd>A 96-character hexadecimal string that represents a byte array of length 48 containing the runtime extendable measurement register.</dd>
           <dt>tdx_rtmr3</dt>
-          <dd>The 96 character hexadecimal string represents a byte array of length 48 containing the runtime extendable measurement register.</dd>
+          <dd>A 96-character hexadecimal string that represents a byte array of length 48 containing the runtime extendable measurement register.</dd>
           <dt>tdx_mrconfigid</dt>
-          <dd>The 96 character hexadecimal string represents a byte array of length 48 containing the software-defined ID for non-owner-defined configuration of the TDX, e.g., runtime or Operating System (OS) configuration. </dd>
+          <dd>A 96-character hexadecimal string that represents a byte array of length 48 containing the software-defined ID for non-owner-defined configuration of the TDX, e.g., runtime or Operating System (OS) configuration. </dd>
           <dt>tdx_mrowner</dt>
-          <dd>The 96 character hexadecimal string represents a byte array of length 48 containing the software-defined ID for the TDX's owner.</dd>
+          <dd>A 96-character hexadecimal string that represents a byte array of length 48 containing the software-defined ID for the TDX's owner.</dd>
           <dt>tdx_mrownerconfig</dt>
-          <dd>The 96 character hexadecimal string represents a byte array of length 48 containing the software-defined ID for owner-defined configuration of the TDX, e.g., specific to the workload rather than the runtime or OS.</dd>
+          <dd>A 96-character hexadecimal string that represents a byte array of length 48 containing the software-defined ID for owner-defined configuration of the TDX, e.g., specific to the workload rather than the runtime or OS.</dd>
           <dt>tdx_report_data</dt>
-          <dd>The 128 character hexadecimal string represents a byte array of length 64. In this context, the TDX has the flexibility to include 64 bytes of custom data in a TDX Report. For instance, this space can be used to hold a nonce, a public key, or a hash of a larger block of data.</dd>
+          <dd>A 128-character hexadecimal string that represents a byte array of length 64. In this context, the TDX has the flexibility to include 64 bytes of custom data in a TDX Report. For instance, this space can be used to hold a nonce, a public key, or a hash of a larger block of data.</dd>
           <dt>tdx_seam_attributes</dt>
-          <dd>The 16 character hexadecimal string represents a byte array of length 8 containing additional configuration of the TDX module.</dd>
+          <dd>A 16 character hexadecimal string that represents a byte array of length 8 containing additional configuration of the TDX module.</dd>
           <dt>tdx_tee_tcb_svn</dt>
-          <dd>The 32 character hexadecimal string represents a byte array of length 16 describing the Trusted Computing Base (TCB) Security Version Numbers (SVNs) of TDX.</dd>
+          <dd>A 32 character hexadecimal string that represents a byte array of length 16 describing the Trusted Computing Base (TCB) Security Version Numbers (SVNs) of TDX.</dd>
           <dt>tdx_xfam</dt>
-          <dd>The 16 character hexadecimal string represents a byte array of length 8 containing a mask of CPU extended features that the TDX is allowed to use.</dd>
+          <dd>A 16 character hexadecimal string that represents a byte array of length 8 containing a mask of CPU extended features that the TDX is allowed to use.</dd>
           <dt>tdx_seamsvn</dt>
-          <dd>The number represents the Intel TDX module SVN. The complete definition of the claim is available in section 3.1 SEAM_SIGSTRUCT: INTEL® TDX MODULE SIGNATURE STRUCTURE of Intel® TDX Loader Interface Specification <xref target="TDX-Loader-Interface"/></dd>
+          <dd>A number that represents the Intel TDX module SVN. The complete definition of the claim is available in section 3.1 SEAM_SIGSTRUCT: INTEL® TDX MODULE SIGNATURE STRUCTURE of Intel® TDX Loader Interface Specification <xref target="TDX-Loader-Interface"/></dd>
           <dt>tdx_td_attributes</dt>
-          <dd>The 16 character hexadecimal string represents a byte array of length 8. These are the attributes associated with the Trust Domain (TD).  The complete definitions of the claims mentioned below are available in the section A.3.4. TD Attributes of <xref target="TDX-DCAP-Quoting-Library"/></dd>
+          <dd>A 16 character hexadecimal string that represents a byte array of length 8. These are the attributes associated with the Trust Domain (TD).  The complete definitions of the claims mentioned below are available in the section A.3.4. TD Attributes of <xref target="TDX-DCAP-Quoting-Library"/></dd>
           <dt>tdx_td_attributes_debug</dt>
-          <dd>The boolean value indicates whether the TD runs in TD debug mode (set to 1) or not (set to 0). In TD debug mode, the CPU state and private memory are accessible by the host VMM.</dd>
+          <dd>A boolean value that indicates whether the TD runs in TD debug mode (set to 1) or not (set to 0). In TD debug mode, the CPU state and private memory are accessible by the host VMM.</dd>
           <dt>tdx_td_attributes_key_locker</dt>
-          <dd>The boolean value indicates whether the TD is allowed to use Key Locker.</dd>
+          <dd>A boolean value that indicates whether the TD is allowed to use Key Locker.</dd>
          <dt>tdx_td_attributes_perfmon</dt>
-          <dd>The boolean value indicates whether the TD is allowed to use Perfmon and PERF_METRICS capabilities.</dd>
+          <dd>A boolean value that indicates whether the TD is allowed to use Perfmon and PERF_METRICS capabilities.</dd>
          <dt>tdx_td_attributes_protection_keys</dt>
-          <dd>The boolean value indicates whether the TD is allowed to use Supervisor Protection Keys.</dd>
+          <dd>A boolean value that indicates whether the TD is allowed to use Supervisor Protection Keys.</dd>
          <dt>tdx_td_attributes_septve_disable</dt>
-          <dd>The boolean value that determines whether to disable EPT violation conversion to #VE on TD access of PENDING pages.</dd>
+          <dd>A boolean value that determines whether to disable EPT violation conversion to #VE on TD access of PENDING pages.</dd>
           </dl>
      </section>
     <section>
@@ -170,7 +170,7 @@
           <dt>attester_advisory_ids</dt>
           <dd>Array of Advisory IDs referring to Intel security advisories that provide insight into the reason(s) for the value of tcbStatus of the platform TCB level being evaluated. See advisoryIDs in Intel® Trusted Services API Management Developer Portal <xref target="TDX-API-Management-Portal"/>.</dd>
           <dt>attester_tcb_status</dt>
-          <dd>The string value represents the TCB level status of the platform being evaluated. See tcbStatus in <xref target="TDX-API-Management-Portal"/>.</dd>
+          <dd>A string value that represents the TCB level status of the platform being evaluated. See tcbStatus in <xref target="TDX-API-Management-Portal"/>.</dd>
        </dl>
     </section>
     </section>
@@ -201,11 +201,11 @@ Claims" registry established by the JWT specification</t>
  <t>Claim Name: tdx_rtmr1</t>
   <t>Claim Description: Runtime extendable measurement register</t>
   <t>Specification Document(s): This document</t>
-  <artwork>-----------------------------------------------</artwork>
+<artwork>-----------------------------------------------</artwork>
 <t>Claim Name: tdx_rtmr2</t>
   <t>Claim Description: Runtime extendable measurement register</t>
   <t>Specification Document(s): This document</t>
- <artwork>-----------------------------------------------</artwork>
+<artwork>-----------------------------------------------</artwork>
 <t>Claim Name: tdx_rtmr3</t>
   <t>Claim Description: Runtime extendable measurement register</t>
   <t>Specification Document(s): This document</t>
@@ -426,7 +426,7 @@ Claims" registry established by the JWT specification</t>
       <name>Examples</name>
       <section>
         <name>TDX attestation token by Intel® Trust Authority</name>
-       <t>Below is a sample TDX attestation token generated by Intel® Trust Authority <xref target="TA"/> which includes claims from this EAT profile. The definitions of the token claims can be found in the Trust Authority EAT profile <xref target="TA-EAT-Profile"/> includes definitions of the following claims</t>
+       <t>Below is a sample TDX attestation token generated by Intel® Trust Authority <xref target="TA"/> which includes claims from this EAT profile. The definitions of the token claims can be found in the Trust Authority EAT profile <xref target="TA-EAT-Profile"/>.</t>
        <artwork><![CDATA[
       {
   "alg": "PS384",
@@ -562,7 +562,7 @@ https://portal.trustauthority.intel.com/eat_profile"
       </section>
        <section>
         <name>TDX attestation token by Microsoft Azure Attestation</name>
-      <t>Below is a sample TDX attestation token generated by Microsoft Azure Attestation <xref target="MAA"/> which includes claims from this EAT profile. The definitions of the token claims can be found in the Azure Attestation EAT profile <xref target="MAA-EAT-Profile"/> includes definitions of the following claims</t>
+      <t>Below is a sample TDX attestation token generated by Microsoft Azure Attestation <xref target="MAA"/> which includes claims from this EAT profile. The definitions of the token claims can be found in the Azure Attestation EAT profile <xref target="MAA-EAT-Profile"/>.</t>
         <artwork><![CDATA[
   {
    "attester_tcb_status": "UpToDate",
