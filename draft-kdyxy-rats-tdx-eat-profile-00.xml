@@ -118,7 +118,7 @@
     </section>
     <section>
         <name>TDX claims</name>
-       <t>The complete definitions of the claims are available in the section A.3.2 TD Quote Body of Intel® TDX DCAP Quoting Library API <xref target="TDX-DCAP-Quoting-Library"/>.</t>
+       <t>The complete definitions of the claims are available in the section A.3.2 TD Quote Body of Intel® TDX DCAP Quoting Library API <xref target="TDX-DCAP-QL"/>.</t>
           <dl newline="true">
           <dt>tdx_mrsignerseam</dt>
           <dd>A 96-character hexadecimal string that represents a byte array of length 48 containing the measurement of the TDX module signer.</dd>
@@ -149,9 +149,9 @@
           <dt>tdx_xfam</dt>
           <dd>A 16 character hexadecimal string that represents a byte array of length 8 containing a mask of CPU extended features that the TDX is allowed to use.</dd>
           <dt>tdx_seamsvn</dt>
-          <dd>A number that represents the Intel TDX module SVN. The complete definition of the claim is available in section 3.1 SEAM_SIGSTRUCT: INTEL® TDX MODULE SIGNATURE STRUCTURE of Intel® TDX Loader Interface Specification <xref target="TDX-Loader-Interface"/></dd>
+          <dd>A number that represents the Intel TDX module SVN. The complete definition of the claim is available in section 3.1 SEAM_SIGSTRUCT: INTEL® TDX MODULE SIGNATURE STRUCTURE of Intel® TDX Loader Interface Specification <xref target="TDX-LI"/></dd>
           <dt>tdx_td_attributes</dt>
-          <dd>A 16 character hexadecimal string that represents a byte array of length 8. These are the attributes associated with the Trust Domain (TD).  The complete definitions of the claims mentioned below are available in the section A.3.4. TD Attributes of <xref target="TDX-DCAP-Quoting-Library"/></dd>
+          <dd>A 16 character hexadecimal string that represents a byte array of length 8. These are the attributes associated with the Trust Domain (TD).  The complete definitions of the claims mentioned below are available in the section A.3.4. TD Attributes of <xref target="TDX-DCAP-QL"/></dd>
           <dt>tdx_td_attributes_debug</dt>
           <dd>A boolean value that indicates whether the TD runs in TD debug mode (set to 1) or not (set to 0). In TD debug mode, the CPU state and private memory are accessible by the host VMM.</dd>
           <dt>tdx_td_attributes_key_locker</dt>
@@ -168,9 +168,9 @@
         <name>Attester claims</name>
        <dl newline="true">
           <dt>attester_advisory_ids</dt>
-          <dd>Array of Advisory IDs referring to Intel security advisories that provide insight into the reason(s) for the value of tcbStatus of the platform TCB level being evaluated. See advisoryIDs in Intel® Trusted Services API Management Developer Portal <xref target="TDX-API-Management-Portal"/>.</dd>
+          <dd>Array of Advisory IDs referring to Intel security advisories that provide insight into the reason(s) for the value of tcbStatus of the platform TCB level being evaluated. See advisoryIDs in Intel® Trusted Services API Management Developer Portal <xref target="TDX-API"/>.</dd>
           <dt>attester_tcb_status</dt>
-          <dd>A string value that represents the TCB level status of the platform being evaluated. See tcbStatus in <xref target="TDX-API-Management-Portal"/>.</dd>
+          <dd>A string value that represents the TCB level status of the platform being evaluated. See tcbStatus in <xref target="TDX-API"/>.</dd>
        </dl>
     </section>
     </section>
@@ -279,7 +279,7 @@ Claims" registry established by the JWT specification</t>
     <section anchor="Security">
       <name>Security Considerations</name>
       <t>This specification re-uses the EAT and JWT specifications.  Hence, the security and privacy considerations of those specifications apply here as well.</t>
-       <t>Additionally, the security considerations as described in <xref target="TDX-Security-Guidance"/> apply here too.</t>
+       <t>Additionally, the security considerations as described in Intel TDX Security Guidance <xref target="TDX-SG"/> apply here too.</t>
     </section>
   </middle>
   <back>
@@ -346,7 +346,7 @@ Claims" registry established by the JWT specification</t>
             <date month="Feb" year="2023"/>
           </front>
         </reference>
-          <reference anchor="TDX-API-Management-Portal" target="https://api.portal.trustedservices.intel.com/documentation">
+          <reference anchor="TDX-API" target="https://api.portal.trustedservices.intel.com/documentation">
           <front>
             <title>Intel® SGX and Intel® TDX Registration Service for Scalable Platforms</title>
             <author>
@@ -355,7 +355,7 @@ Claims" registry established by the JWT specification</t>
             <date month="Feb" year="2023"/>
           </front>
         </reference>
-         <reference anchor="TDX-DCAP-Quoting-Library" target="https://download.01.org/intel-sgx/latest/dcap-latest/linux/docs/Intel_TDX_DCAP_Quoting_Library_API.pdf">
+         <reference anchor="TDX-DCAP-QL" target="https://download.01.org/intel-sgx/latest/dcap-latest/linux/docs/Intel_TDX_DCAP_Quoting_Library_API.pdf">
           <front>
             <title>Intel® Trust Domain Extensions Data Center Attestation Primitives (Intel® TDX DCAP): Quote Generation Library and Quote Verification Library</title>
             <author>
@@ -364,7 +364,7 @@ Claims" registry established by the JWT specification</t>
             <date month="Aug" year="2023"/>
           </front>
         </reference>
-         <reference anchor="TDX-Loader-Interface" target="https://cdrdv2.intel.com/v1/dl/getContent/733584">
+         <reference anchor="TDX-LI" target="https://cdrdv2.intel.com/v1/dl/getContent/733584">
           <front>
             <title>Intel® Trust Domain Extensions - SEAM Loader (SEAMLDR) Interface Specification</title>
             <author>
@@ -403,7 +403,7 @@ Claims" registry established by the JWT specification</t>
             <date month="Oct" year="2023"/>
           </front>
         </reference>
-        <reference anchor="MAA-EAT-Profile" target="https://portal.trustauthority.intel.com/eat_profile">
+        <reference anchor="MAA-Profile" target="https://portal.trustauthority.intel.com/eat_profile">
           <front>
             <title>EAT profile of Microsoft Azure Attestation</title>
             <author>
@@ -412,7 +412,7 @@ Claims" registry established by the JWT specification</t>
             <date month="Oct" year="2023"/>
           </front>
         </reference>
-        <reference anchor="TA-EAT-Profile" target="https://portal.trustauthority.intel.com/eat_profile">
+        <reference anchor="TA-Profile" target="https://portal.trustauthority.intel.com/eat_profile">
           <front>
             <title>EAT profile of Intel® Trust Authority</title>
             <author>
@@ -421,7 +421,7 @@ Claims" registry established by the JWT specification</t>
             <date month="Oct" year="2023"/>
           </front>
         </reference>
-        <reference anchor="TDX-Security-Guidance" target="https://www.intel.com/content/www/us/en/developer/tools/trust-domain-extensions/documentation.html#security-guidance">
+        <reference anchor="TDX-SG" target="https://www.intel.com/content/www/us/en/developer/tools/trust-domain-extensions/documentation.html#security-guidance">
           <front>
             <title>Intel TDX Security Guidance</title>
             <author>
@@ -436,7 +436,7 @@ Claims" registry established by the JWT specification</t>
       <name>Examples</name>
       <section>
         <name>TDX attestation token by Intel® Trust Authority</name>
-       <t>Below is a sample TDX attestation token generated by Intel® Trust Authority <xref target="TA"/> which includes claims from this EAT profile. The definitions of the token claims can be found in the Trust Authority EAT profile <xref target="TA-EAT-Profile"/>.</t>
+       <t>Below is a sample TDX attestation token generated by Intel® Trust Authority <xref target="TA"/> which includes claims from this EAT profile. The definitions of the token claims can be found in the Trust Authority EAT profile <xref target="TA-Profile"/>.</t>
        <artwork><![CDATA[
       {
   "alg": "PS384",
@@ -572,7 +572,7 @@ https://portal.trustauthority.intel.com/eat_profile"
       </section>
        <section>
         <name>TDX attestation token by Microsoft Azure Attestation</name>
-      <t>Below is a sample TDX attestation token generated by Microsoft Azure Attestation <xref target="MAA"/> which includes claims from this EAT profile. The definitions of the token claims can be found in the Azure Attestation EAT profile <xref target="MAA-EAT-Profile"/>.</t>
+      <t>Below is a sample TDX attestation token generated by Microsoft Azure Attestation <xref target="MAA"/> which includes claims from this EAT profile. The definitions of the token claims can be found in the Azure Attestation EAT profile <xref target="MAA-Profile"/>.</t>
         <artwork><![CDATA[
   {
    "attester_tcb_status": "UpToDate",
