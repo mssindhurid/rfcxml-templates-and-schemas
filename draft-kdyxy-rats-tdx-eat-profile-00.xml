@@ -279,6 +279,7 @@ Claims" registry established by the JWT specification</t>
     <section anchor="Security">
       <name>Security Considerations</name>
       <t>This specification re-uses the EAT and JWT specifications.  Hence, the security and privacy considerations of those specifications apply here as well.</t>
+       <t>Additionally, the security considerations as described in <xref target="TDX-Security-Guidance"/> apply here too.</t>
     </section>
   </middle>
   <back>
@@ -336,7 +337,7 @@ Claims" registry established by the JWT specification</t>
             <date month="May" year="2015"/>
             </front>
         </reference>
-        <reference anchor="TDX" target="https://cdrdv2.intel.com/v1/dl/getContent/690419">
+        <reference anchor="TDX" target="https://www.intel.com/content/www/us/en/developer/tools/trust-domain-extensions/overview.html">
           <front>
             <title>Intel® Trust Domain Extensions</title>
             <author>
@@ -418,6 +419,15 @@ Claims" registry established by the JWT specification</t>
               <organization>Intel</organization>
             </author>
             <date month="Oct" year="2023"/>
+          </front>
+        </reference>
+        <reference anchor="TDX-Security-Guidance" target="https://www.intel.com/content/www/us/en/developer/tools/trust-domain-extensions/documentation.html#security-guidance">
+          <front>
+            <title>Intel TDX Security Guidance</title>
+            <author>
+              <organization>Intel</organization>
+            </author>
+            <date month="Feb" year="2023"/>
           </front>
         </reference>
       </references>
