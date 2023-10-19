@@ -192,7 +192,7 @@ Claims" registry established by the JWT specification</t>
   <t>Specification Document(s): This document</t>
  <artwork>-----------------------------------------------</artwork>
  <t>Claim Name: tdx_mrtd</t>
-  <t>Claim Description: Measurement of TDX initial contents</t>
+  <t>Claim Description: Measurement of the TDX initial contents</t>
   <t>Specification Document(s): This document</t>
   <artwork>-----------------------------------------------</artwork>
  <t>Claim Name: tdx_rtmr0</t>
@@ -224,7 +224,7 @@ Claims" registry established by the JWT specification</t>
   <t>Specification Document(s): This document</t>
 <artwork>-----------------------------------------------</artwork>
 <t>Claim Name: tdx_report_data</t>
-  <t>Claim Description: Custom data in a TDX Report</t>
+  <t>Claim Description: Custom data in the TDX Report</t>
   <t>Specification Document(s): This document</t>
 <artwork>-----------------------------------------------</artwork>
 <t>Claim Name: tdx_seam_attributes</t>
@@ -232,15 +232,15 @@ Claims" registry established by the JWT specification</t>
   <t>Specification Document(s): This document</t>
 <artwork>-----------------------------------------------</artwork>
 <t>Claim Name: tdx_tee_tcb_svn</t>
-  <t>Claim Description: Trusted Computing Base (TCB) Security Version Numbers (SVNs) of TDX</t>
+  <t>Claim Description: Trusted Computing Base (TCB) Security Version Numbers (SVNs) of the TDX</t>
   <t>Specification Document(s): This document</t>
 <artwork>-----------------------------------------------</artwork>
 <t>Claim Name: tdx_xfam</t>
-  <t>Claim Description:Mask of CPU extended features that the TDX is allowed to use</t>
+  <t>Claim Description: Mask of CPU extended features that the TDX is allowed to use</t>
   <t>Specification Document(s): This document</t>
 <artwork>-----------------------------------------------</artwork>
 <t>Claim Name: tdx_seamsvn</t>
-  <t>Claim Description: Intel TDX module Security Version Number (SVN)</t>
+  <t>Claim Description: The TDX module Security Version Number (SVN)</t>
   <t>Specification Document(s): This document</t>
 <artwork>-----------------------------------------------</artwork>
 <t>Claim Name: tdx_td_attributes</t>
