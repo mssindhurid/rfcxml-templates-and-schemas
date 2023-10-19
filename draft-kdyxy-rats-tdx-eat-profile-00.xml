@@ -146,7 +146,7 @@
           <dt>tdx_seam_attributes</dt>
           <dd>A 16 character hexadecimal string that represents a byte array of length 8 containing additional configuration of the TDX module.</dd>
           <dt>tdx_tee_tcb_svn</dt>
-          <dd>A 32 character hexadecimal string that represents a byte array of length 16 describing the Trusted Computing Base (TCB) Security Version Numbers (SVNs) of TDX.</dd>
+          <dd>A 32 character hexadecimal string that represents a byte array of length 16 describing Trusted Computing Base (TCB) Security Version Numbers (SVNs) of the TDX.</dd>
           <dt>tdx_xfam</dt>
           <dd>A 16 character hexadecimal string that represents a byte array of length 8 containing a mask of CPU extended features that the TDX is allowed to use.</dd>
           <dt>tdx_seamsvn</dt>
