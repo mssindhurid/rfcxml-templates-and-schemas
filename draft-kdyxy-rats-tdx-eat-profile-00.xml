@@ -119,7 +119,7 @@
     </section>
     <section>
         <name>TDX claims</name>
-       <t>The complete definitions of the following claims are available in the section A.3.2 TD Quote Body of <xref target="TDX-DCAP-Quoting-Library"/>.</t>
+       <t>The complete definitions of the following claims are available in section A.3.2 TD Quote Body of <xref target="TDX-DCAP-Quoting-Library"/>.</t>
           <dl newline="true">
           <dt>tdx_mrsignerseam</dt>
           <dd>A 96-character hexadecimal string that represents a byte array of length 48 containing the measurement of the TDX module signer.</dd>
@@ -150,9 +150,9 @@
           <dt>tdx_xfam</dt>
           <dd>A 16 character hexadecimal string that represents a byte array of length 8 containing a mask of CPU extended features that the TDX is allowed to use.</dd>
           <dt>tdx_seamsvn</dt>
-          <dd>A number that represents the Intel TDX module SVN. The complete definition of the claim is available in section 3.1 SEAM_SIGSTRUCT: INTEL® TDX MODULE SIGNATURE STRUCTURE of <xref target="TDX-SEAM-Loader-Interface"/> specification.</dd>
+          <dd>A number that represents the Intel TDX module SVN. The complete definition of the claim is available in section 3.1 SEAM_SIGSTRUCT: INTEL® TDX MODULE SIGNATURE STRUCTURE of the <xref target="TDX-SEAM-Loader-Interface"/> specification.</dd>
           <dt>tdx_td_attributes</dt>
-          <dd>A 16 character hexadecimal string that represents a byte array of length 8. These are the attributes associated with the Trust Domain (TD).  The complete definitions of the claims mentioned below are available in the section A.3.4. TD Attributes of <xref target="TDX-DCAP-Quoting-Library"/>.</dd>
+          <dd>A 16 character hexadecimal string that represents a byte array of length 8. These are the attributes associated with the Trust Domain (TD).  The complete definitions of the claims mentioned below are available in section A.3.4. TD Attributes of <xref target="TDX-DCAP-Quoting-Library"/>.</dd>
           <dt>tdx_td_attributes_debug</dt>
           <dd>A boolean value that indicates whether the TD runs in TD debug mode (set to 1) or not (set to 0). In TD debug mode, the CPU state and private memory are accessible by the host VMM.</dd>
           <dt>tdx_td_attributes_key_locker</dt>
