@@ -169,9 +169,9 @@
         <name>Attester claims</name>
        <dl newline="true">
           <dt>attester_advisory_ids</dt>
-          <dd>Array of Advisory IDs referring to Intel security advisories that provide insight into the reason(s) for the value of tcbStatus of the platform TCB level being evaluated. See advisoryIDs in Intel® Trusted Services API Management Developer Portal <xref target="TDX-API"/>.</dd>
+          <dd>Array of Advisory IDs referring to Intel security advisories that provide insight into the reason(s) for the value of tcbStatus of the platform TCB level being evaluated. See advisoryIDs in <xref target="TDX-API-Portal"/>.</dd>
           <dt>attester_tcb_status</dt>
-          <dd>A string value that represents the TCB level status of the platform being evaluated. See tcbStatus in <xref target="TDX-API"/>.</dd>
+          <dd>A string value that represents the TCB level status of the platform being evaluated. See tcbStatus in <xref target="TDX-API-Portal"/>.</dd>
        </dl>
     </section>
     </section>
@@ -347,7 +347,7 @@ Claims" registry established by the JWT specification</t>
             <date month="Feb" year="2023"/>
           </front>
         </reference>
-          <reference anchor="TDX-API" target="https://api.portal.trustedservices.intel.com/documentation">
+          <reference anchor="TDX-API-Portal" target="https://api.portal.trustedservices.intel.com/documentation">
           <front>
             <title>Intel® SGX and Intel® TDX Registration Service for Scalable Platforms</title>
             <author>
