@@ -404,7 +404,7 @@ Claims" registry established by the JWT specification</t>
             <date month="Oct" year="2023"/>
           </front>
         </reference>
-        <reference anchor="MAA-Profile" target="https://learn.microsoft.com/en-us/azure/attestation/tdx-eat-profile">
+        <reference anchor="MAA-Profile" target="https://learn.microsoft.com/en-us/azure/attestation/trust-domain-extensions-eat-profile">
           <front>
             <title>EAT profile of Microsoft Azure Attestation</title>
             <author>
