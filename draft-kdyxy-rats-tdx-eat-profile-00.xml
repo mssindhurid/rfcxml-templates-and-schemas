@@ -66,7 +66,7 @@
   <middle>   
     <section>
       <name>Introduction</name>
-      <t>The profile outlines the claims for an Intel® Trust Domain Extensions <xref target="TDX"/> attestation result, 
+      <t>This profile outlines claims for an Intel® Trust Domain Extensions <xref target="TDX"/> attestation result, 
         generated as an Entity Attestation Token <xref target="EAT"/> in a signed JSON Web Token <xref target="JWT"/> 
         format using JOSE header. It doesn't contain nested tokens or a detached EAT bundle. The profile allows signing 
         of the JWT token using RSA cryptographic algorithm. To facilitate verification of the signed JWT tokens, the 
