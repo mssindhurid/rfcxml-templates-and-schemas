@@ -89,7 +89,7 @@
        <t>This profile encompasses claims from the IETF JWT specification, the EAT specification and Intel's TDX specification.</t>
     <section>
         <name>JWT claims</name>
-        <t>The complete definitions of the following claims are available in the JWT specification.</t>
+        <t>The complete definitions of the following claims are available in the <xref target="JWT"/> specification.</t>
          <dl newline="true">
           <dt>iat</dt>
           <dd>The "iat" (issued at) claim identifies the time at which the JWT was issued.</dd>
@@ -105,7 +105,7 @@
      </section>
     <section>
         <name>EAT claims</name>   
-       <t>The complete definitions of the following claims are available in the EAT specification.</t>
+       <t>The complete definitions of the following claims are available in the <xref target="EAT"/> specification.</t>
          <dl newline="true">
           <dt>eat_profile</dt>
           <dd>The "eat_profile" claim identifies an EAT profile by either a URL or an OID.</dd>
