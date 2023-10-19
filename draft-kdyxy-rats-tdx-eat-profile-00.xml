@@ -119,7 +119,7 @@
     </section>
     <section>
         <name>TDX claims</name>
-       <t>The complete definitions of the claims are available in the section A.3.2 TD Quote Body of Intel® TDX DCAP Quoting Library API <xref target="TDX-DCAP-QL"/>.</t>
+       <t>The complete definitions of the following claims are available in the section A.3.2 TD Quote Body of Intel® TDX DCAP Quoting Library API <xref target="TDX-DCAP-QL"/>.</t>
           <dl newline="true">
           <dt>tdx_mrsignerseam</dt>
           <dd>A 96-character hexadecimal string that represents a byte array of length 48 containing the measurement of the TDX module signer.</dd>
