@@ -66,7 +66,7 @@
   <middle>   
     <section>
       <name>Introduction</name>
-      <t>The profile outlines the claims for an Intel® Trust Domain Extensions <xref target="TDX"/> attestation result, 
+      <t>This profile outlines claims for an Intel® Trust Domain Extensions <xref target="TDX"/> attestation result, 
         generated as an Entity Attestation Token <xref target="EAT"/> in a signed JSON Web Token <xref target="JWT"/> 
         format using JOSE header. It doesn't contain nested tokens or a detached EAT bundle. The profile allows signing 
         of the JWT token using RSA cryptographic algorithm. To facilitate verification of the signed JWT tokens, the 
@@ -86,9 +86,10 @@
     </section>
      <section>
         <name>TDX profile claims</name>
+       <t>This profile encompasses claims from the IETF JWT specification, the EAT specification and Intel's TDX specification.</t>
     <section>
         <name>JWT claims</name>
-        <t>The complete definitions of the following claims are available in the IETF JWT specification. </t>
+        <t>The complete definitions of the following claims are available in the JWT specification.</t>
          <dl newline="true">
           <dt>iat</dt>
           <dd>The "iat" (issued at) claim identifies the time at which the JWT was issued.</dd>
@@ -111,7 +112,7 @@
           <dt>dbgstat</dt>
           <dd>The "dbgstat" claim applies to entity-wide or submodule-wide debug facilities of the entity like <xref target="JTAG"/> and diagnostic hardware built into chips.</dd>
           <dt>intuse</dt>
-          <dd>The "intuse" claim provides an indication to an EAT consumer about the intended usage of the token. </dd>
+          <dd>The "intuse" claim provides an indication to an EAT consumer about the intended usage of the token.</dd>
           <dt>eat_nonce</dt>
           <dd>An EAT nonce is either a byte or text string or an array of byte or text strings.  The array option supports multistage EAT verification and consumption.</dd>
          </dl>
@@ -135,7 +136,7 @@
           <dt>tdx_rtmr3</dt>
           <dd>A 96-character hexadecimal string that represents a byte array of length 48 containing the runtime extendable measurement register.</dd>
           <dt>tdx_mrconfigid</dt>
-          <dd>A 96-character hexadecimal string that represents a byte array of length 48 containing the software-defined ID for non-owner-defined configuration of the TDX, e.g., runtime or Operating System (OS) configuration. </dd>
+          <dd>A 96-character hexadecimal string that represents a byte array of length 48 containing the software-defined ID for non-owner-defined configuration of the TDX, e.g., runtime or Operating System (OS) configuration.</dd>
           <dt>tdx_mrowner</dt>
           <dd>A 96-character hexadecimal string that represents a byte array of length 48 containing the software-defined ID for the TDX's owner.</dd>
           <dt>tdx_mrownerconfig</dt>
@@ -149,9 +150,9 @@
           <dt>tdx_xfam</dt>
           <dd>A 16 character hexadecimal string that represents a byte array of length 8 containing a mask of CPU extended features that the TDX is allowed to use.</dd>
           <dt>tdx_seamsvn</dt>
-          <dd>A number that represents the Intel TDX module SVN. The complete definition of the claim is available in section 3.1 SEAM_SIGSTRUCT: INTEL® TDX MODULE SIGNATURE STRUCTURE of Intel® TDX Loader Interface Specification <xref target="TDX-LI"/></dd>
+          <dd>A number that represents the Intel TDX module SVN. The complete definition of the claim is available in section 3.1 SEAM_SIGSTRUCT: INTEL® TDX MODULE SIGNATURE STRUCTURE of Intel® TDX Loader Interface Specification <xref target="TDX-LI"/>.</dd>
           <dt>tdx_td_attributes</dt>
-          <dd>A 16 character hexadecimal string that represents a byte array of length 8. These are the attributes associated with the Trust Domain (TD).  The complete definitions of the claims mentioned below are available in the section A.3.4. TD Attributes of <xref target="TDX-DCAP-QL"/></dd>
+          <dd>A 16 character hexadecimal string that represents a byte array of length 8. These are the attributes associated with the Trust Domain (TD).  The complete definitions of the claims mentioned below are available in the section A.3.4. TD Attributes of <xref target="TDX-DCAP-QL"/>.</dd>
           <dt>tdx_td_attributes_debug</dt>
           <dd>A boolean value that indicates whether the TD runs in TD debug mode (set to 1) or not (set to 0). In TD debug mode, the CPU state and private memory are accessible by the host VMM.</dd>
           <dt>tdx_td_attributes_key_locker</dt>
@@ -403,7 +404,7 @@ Claims" registry established by the JWT specification</t>
             <date month="Oct" year="2023"/>
           </front>
         </reference>
-        <reference anchor="MAA-Profile" target="https://portal.trustauthority.intel.com/eat_profile">
+        <reference anchor="MAA-Profile" target="https://learn.microsoft.com/en-us/azure/attestation/tdx-eat-profile">
           <front>
             <title>EAT profile of Microsoft Azure Attestation</title>
             <author>
